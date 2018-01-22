@@ -4,7 +4,12 @@
 
 /// Regular font family
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: 'TimesNewRoman', 'Times New Roman', 'Times', 'Baskerville', 'Georgia', serif !default;
+
+
+/// Headings font family
+/// @type List
+$brand-font-stack: "GillSansWGL", "Gill Sans WGL Regular", "Gill Sans MT", "Gill Sans", GillSans, Calibri, sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List
@@ -12,11 +17,11 @@ $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
 
 /// Copy text color
 /// @type Color
-$text-color: rgb(34, 34, 34) !default;
+$text-color: rgb(0, 0, 0) !default;
 
 /// Main brand color
 /// @type Color
-$brand-color: rgb(229, 0, 80) !default;
+$brand-color: rgb(0, 0, 0) !default;
 
 /// Light grey
 /// @type Color
@@ -33,6 +38,13 @@ $dark-grey: rgb(68, 68, 68) !default;
 /// Container's maximum width
 /// @type Length
 $max-width: 1180px !default;
+
+/// Spacing values
+$space-x-small: 4px;
+$space-small: 12px;
+$space-medium: 24px;
+$space-large: 48px;
+$space-x-large: 96px;
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length

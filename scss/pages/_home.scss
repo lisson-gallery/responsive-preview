@@ -1,3 +1,14 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+
+.page-home > main {
+  display: grid;
+  grid-gap: $space-medium;
+  grid-template-columns: repeat(3, 1fr);
+
+  > .feature {
+    grid-column: 1 / 4;
+    grid-row: 1;
+  }
+}
