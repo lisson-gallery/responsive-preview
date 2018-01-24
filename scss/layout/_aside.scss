@@ -1,0 +1,18 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the sidebar of lissongallery.com
+// -----------------------------------------------------------------------------
+
+#nav {
+  font-size: 18px;
+
+  li {
+  }
+  a:link, a:visited {
+    text-decoration: none;
+    display: inline-block;
+    padding: $space-x-small 0;
+  }
+  a:hover, a:active, a:focus {
+    text-decoration: underline;
+  }
+}

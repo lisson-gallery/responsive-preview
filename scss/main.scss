@@ -18,12 +18,14 @@
 // 4. Layout-related sections
 @import
   'layout/header',
+  'layout/aside',
   'layout/grid',
   'layout/footer';
 
 // 5. Components
 @import
-  'components/button';
+  'components/button',
+  'components/lists';
 
 // 6. Page-specific styles
 @import

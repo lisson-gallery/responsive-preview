@@ -4,11 +4,25 @@
 
 .page-home > main {
   display: grid;
-  grid-gap: $space-medium;
+  grid-gap: $space-large $space-medium;
   grid-template-columns: repeat(3, 1fr);
+  margin-bottom: $space-large;
+}
 
-  > .feature {
-    grid-column: 1 / 4;
-    grid-row: 1;
+.news-grid-feature {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  height: 338px;
+  background: grey;
+}
+
+.news-grid-item {
+  img {
+    width: 100%;
+    max-width: 100%;
   }
+}
+
+.news-grid-item-title {
+  margin-bottom: $space-x-small;
 }
