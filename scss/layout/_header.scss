@@ -6,4 +6,10 @@
   background: url('../assets/lisson-gallery-logo.svg') no-repeat;
   width: 310px;
   height: 20px;
+  max-width: 100%;
+
+  @media screen and (max-width: $breakpoint-small) {
+
+    margin-right: $space-medium;
+  }
 }

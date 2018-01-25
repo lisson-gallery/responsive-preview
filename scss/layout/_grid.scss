@@ -12,6 +12,19 @@ body {
                       "aside footer footer footer";
   grid-template-columns: minmax(100px, 220px) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);
 
+  @media screen and (max-width: $breakpoint-large) {
+    grid-template-areas: "header header header aside"
+                        "main main main main"
+                        "main main main main"
+                        "footer footer footer footer";
+    grid-template-columns: auto;
+    padding: 0 $space-medium;
+  }
+
+  @media screen and (max-width: $breakpoint-small) {
+    padding: 0 $space-small;
+  }
+
   > * {
     border: 1px solid yellow;
   }

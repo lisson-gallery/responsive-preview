@@ -485,7 +485,11 @@ h1, h2, h3, h4, h5, h6 {
 #brand-link {
   background: url("../assets/lisson-gallery-logo.svg") no-repeat;
   width: 310px;
-  height: 20px; }
+  height: 20px;
+  max-width: 100%; }
+  @media screen and (max-width: 640px) {
+    #brand-link {
+      margin-right: 24px; } }
 
 #nav {
   font-size: 18px; }
@@ -496,12 +500,84 @@ h1, h2, h3, h4, h5, h6 {
   #nav a:hover, #nav a:active, #nav a:focus {
     text-decoration: underline; }
 
+.menu-btn {
+  display: none; }
+
+.menu-icon {
+  display: none; }
+
+@media screen and (max-width: 1024px) {
+  .menu {
+    text-align: right;
+    height: 0;
+    padding-top: 66px;
+    padding-right: 24px;
+    transition: height .2s ease-out; }
+
+  .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 34px 24px 30px;
+    position: relative;
+    user-select: none; }
+
+  .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px; }
+
+  .menu-icon .navicon:before,
+  .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%; }
+
+  .menu-icon .navicon:before {
+    top: 5px; }
+
+  .menu-icon .navicon:after {
+    top: -5px; }
+
+  .menu-btn {
+    display: none; }
+
+  .menu-btn:checked ~ .menu {
+    height: 310px; }
+
+  .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent; }
+
+  .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg); }
+
+  .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg); }
+
+  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0; } }
 body {
   max-width: 1000px;
   margin: auto;
   display: grid;
   grid-template-areas: ". header header header" "aside main main main" "aside main main main" "aside footer footer footer";
   grid-template-columns: minmax(100px, 220px) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr); }
+  @media screen and (max-width: 1024px) {
+    body {
+      grid-template-areas: "header header header aside" "main main main main" "main main main main" "footer footer footer footer";
+      grid-template-columns: auto;
+      padding: 0 24px; } }
+  @media screen and (max-width: 640px) {
+    body {
+      padding: 0 12px; } }
   body > * {
     border: 1px solid yellow; }
   body > header {
@@ -557,16 +633,27 @@ body {
   grid-gap: 48px 24px;
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: 48px; }
+  @media screen and (max-width: 640px) {
+    .page-home > main {
+      grid-template-columns: repeat(4, 1fr); } }
 
 .news-grid-feature {
-  grid-column: 1 / 4;
-  grid-row: 1;
+  grid-column: span 3;
   height: 338px;
   background: grey; }
+  @media screen and (max-width: 640px) {
+    .news-grid-feature {
+      grid-column: span 4; } }
 
 .news-grid-item img {
   width: 100%;
   max-width: 100%; }
+@media screen and (max-width: 640px) {
+  .news-grid-item {
+    grid-column: span 2; } }
+@media screen and (max-width: 375px) {
+  .news-grid-item {
+    grid-column: span 4; } }
 
 .news-grid-item-title {
   margin-bottom: 4px; }
