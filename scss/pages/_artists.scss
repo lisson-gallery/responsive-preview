@@ -1,0 +1,41 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+.page-artists > main {
+  margin-bottom: $space-large;
+
+  @media screen and (max-width: $breakpoint-small) {
+  }
+}
+
+
+.artists-list {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(5, minmax(20%, 200px));
+  grid-template-rows: repeat(12, auto);
+  margin: 0;
+
+  @media screen and (max-width: $breakpoint-medium) {
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(20, auto);
+  }
+
+  @media screen and (max-width: 510px) {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(30, auto);
+  }
+
+  li {
+    line-height: 19px;
+    margin-bottom: 8px;
+    margin-right: 16px;
+    min-height: 38px;
+  }
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+  }
+}

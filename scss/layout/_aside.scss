@@ -3,12 +3,16 @@
 // -----------------------------------------------------------------------------
 
 #nav {
-  font-size: 18px;
+  font-size: 20px;
 
   a:link, a:visited {
     text-decoration: none;
     display: inline-block;
     padding: $space-x-small 0;
+
+    &.nav-current {
+      text-decoration: underline;
+    }
   }
   a:hover, a:active, a:focus {
     text-decoration: underline;
