@@ -30,6 +30,34 @@
   grid-column: 1 / 2;
   grid-row: 2;
   margin-bottom: $space-small;
+
+  a:link,
+  a:visited {
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+  }
+}
+
+.icon-facebook {
+  background-image: url('../assets/icon-facebook.svg');
+}
+.icon-instagram {
+  background-image: url('../assets/icon-instagram.svg');
+}
+.icon-soundcloud {
+  background-image: url('../assets/icon-soundcloud.svg');
+}
+.icon-twitter {
+  background-image: url('../assets/icon-twitter.svg');
+}
+.icon-wechat {
+  background-image: url('../assets/icon-wechat.svg');
+}
+.icon-youtube {
+  background-image: url('../assets/icon-youtube.svg');
 }
 
 .footer-legal {

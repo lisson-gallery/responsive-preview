@@ -22,7 +22,7 @@ body {
   }
 
   @media screen and (max-width: $breakpoint-small) {
-    padding: 0 $space-small;
+    padding: 0;
   }
 
   > * {
@@ -31,17 +31,35 @@ body {
 
   > header {
     grid-area: header;
+
+    @media screen and (max-width: $breakpoint-small) {
+      padding-left: $space-small;
+    }
   }
 
   > aside {
     grid-area: aside;
+
+    @media screen and (max-width: $breakpoint-small) {
+      padding-right: $space-small;
+    }
   }
 
   > main {
     grid-area: main;
+
+    @media screen and (max-width: $breakpoint-small) {
+      padding-left: $space-small;
+      padding-right: $space-small;
+    }
   }
 
   > footer {
     grid-area: footer;
+
+    @media screen and (max-width: $breakpoint-small) {
+      padding-left: $space-small;
+      padding-right: $space-small;
+    }
   }
 }

@@ -28,7 +28,7 @@
     text-align: right;
     height: 0;
     padding-top: 66px;
-    padding-right: 24px;
+    padding-right: 0;
     transition: height .2s ease-out;
   }
 
@@ -36,7 +36,7 @@
     cursor: pointer;
     display: inline-block;
     float: right;
-    padding: 34px 24px 30px;
+    padding: 34px 0 30px 24px;
     position: relative;
     user-select: none;
   }

@@ -511,14 +511,14 @@ h1, h2, h3, h4, h5, h6 {
     text-align: right;
     height: 0;
     padding-top: 66px;
-    padding-right: 24px;
+    padding-right: 0;
     transition: height .2s ease-out; }
 
   .menu-icon {
     cursor: pointer;
     display: inline-block;
     float: right;
-    padding: 34px 24px 30px;
+    padding: 34px 0 30px 24px;
     position: relative;
     user-select: none; }
 
@@ -577,17 +577,31 @@ body {
       padding: 0 24px; } }
   @media screen and (max-width: 640px) {
     body {
-      padding: 0 12px; } }
+      padding: 0; } }
   body > * {
     border: 1px solid yellow; }
   body > header {
     grid-area: header; }
+    @media screen and (max-width: 640px) {
+      body > header {
+        padding-left: 12px; } }
   body > aside {
     grid-area: aside; }
+    @media screen and (max-width: 640px) {
+      body > aside {
+        padding-right: 12px; } }
   body > main {
     grid-area: main; }
+    @media screen and (max-width: 640px) {
+      body > main {
+        padding-left: 12px;
+        padding-right: 12px; } }
   body > footer {
     grid-area: footer; }
+    @media screen and (max-width: 640px) {
+      body > footer {
+        padding-left: 12px;
+        padding-right: 12px; } }
 
 #footer {
   border-top: 1px solid black;
@@ -614,6 +628,31 @@ body {
   grid-column: 1 / 2;
   grid-row: 2;
   margin-bottom: 12px; }
+  .footer-social a:link,
+  .footer-social a:visited {
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 30px;
+    height: 24px;
+    display: inline-block; }
+
+.icon-facebook {
+  background-image: url("../assets/icon-facebook.svg"); }
+
+.icon-instagram {
+  background-image: url("../assets/icon-instagram.svg"); }
+
+.icon-soundcloud {
+  background-image: url("../assets/icon-soundcloud.svg"); }
+
+.icon-twitter {
+  background-image: url("../assets/icon-twitter.svg"); }
+
+.icon-wechat {
+  background-image: url("../assets/icon-wechat.svg"); }
+
+.icon-youtube {
+  background-image: url("../assets/icon-youtube.svg"); }
 
 .footer-legal {
   grid-column: 1 / 3;
