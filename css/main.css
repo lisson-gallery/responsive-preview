@@ -437,11 +437,13 @@ body {
   font-family: "TimesNewRoman", "Times New Roman", "Times", "Baskerville", "Georgia", serif;
   font-size: 16px; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,
+.heading-2 {
   font-family: "GillSansWGL", "Gill Sans WGL Regular", "Gill Sans MT", "Gill Sans", GillSans, Calibri, sans-serif;
   font-weight: 400; }
 
-h2 {
+h2,
+.heading-2 {
   font-size: 20px;
   line-height: 1.2;
   margin-top: 0;
@@ -598,7 +600,11 @@ body {
       body > header {
         padding-left: 12px; } }
   body > aside {
-    grid-area: aside; }
+    grid-area: aside;
+    padding-top: 48px; }
+    @media screen and (max-width: 1024px) {
+      body > aside {
+        padding-top: initial; } }
     @media screen and (max-width: 640px) {
       body > aside {
         padding-right: 12px; } }
@@ -681,6 +687,54 @@ body {
 .inline-list li {
   display: inline; }
 
+.news-grid-3up {
+  display: grid;
+  grid-gap: 48px 24px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 48px; }
+  @media screen and (max-width: 640px) {
+    .news-grid-3up {
+      grid-template-columns: repeat(4, 1fr); } }
+
+.news-grid-3up-feature {
+  grid-column: span 3;
+  height: 338px;
+  background: grey; }
+  @media screen and (max-width: 640px) {
+    .news-grid-3up-feature {
+      grid-column: span 4; } }
+
+.news-grid-3up-item img {
+  width: 100%;
+  max-width: 100%; }
+@media screen and (max-width: 640px) {
+  .news-grid-3up-item {
+    grid-column: span 2; } }
+@media screen and (max-width: 375px) {
+  .news-grid-3up-item {
+    grid-column: span 4; } }
+
+.news-grid-2up {
+  display: grid;
+  grid-gap: 48px 24px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 48px; }
+
+.news-grid-2up-feature {
+  grid-column: span 2;
+  height: 338px;
+  background: grey; }
+
+.news-grid-2up-item img {
+  width: 100%;
+  max-width: 100%; }
+@media screen and (max-width: 640px) {
+  .news-grid-2up-item {
+    grid-column: span 2; } }
+
+.news-grid-item-title {
+  margin-bottom: 4px; }
+
 .page-home > main {
   display: grid;
   grid-gap: 48px 24px;
@@ -689,27 +743,6 @@ body {
   @media screen and (max-width: 640px) {
     .page-home > main {
       grid-template-columns: repeat(4, 1fr); } }
-
-.news-grid-feature {
-  grid-column: span 3;
-  height: 338px;
-  background: grey; }
-  @media screen and (max-width: 640px) {
-    .news-grid-feature {
-      grid-column: span 4; } }
-
-.news-grid-item img {
-  width: 100%;
-  max-width: 100%; }
-@media screen and (max-width: 640px) {
-  .news-grid-item {
-    grid-column: span 2; } }
-@media screen and (max-width: 375px) {
-  .news-grid-item {
-    grid-column: span 4; } }
-
-.news-grid-item-title {
-  margin-bottom: 4px; }
 
 .page-artists > main {
   margin-bottom: 48px; }
@@ -736,5 +769,8 @@ body {
   .artists-list a:link,
   .artists-list a:visited {
     text-decoration: none; }
+
+.page-news > main {
+  margin-bottom: 48px; }
 
 /*# sourceMappingURL=main.css.map */

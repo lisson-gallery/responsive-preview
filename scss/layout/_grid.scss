@@ -39,6 +39,11 @@ body {
 
   > aside {
     grid-area: aside;
+    padding-top: $space-large;
+
+    @media screen and (max-width: $breakpoint-large) {
+      padding-top: initial;
+    }
 
     @media screen and (max-width: $breakpoint-small) {
       padding-right: $space-small;

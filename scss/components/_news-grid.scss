@@ -1,0 +1,67 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the news grid component.
+// -----------------------------------------------------------------------------
+
+.news-grid-3up {
+  display: grid;
+  grid-gap: $space-large $space-medium;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: $space-large;
+
+  @media screen and (max-width: $breakpoint-small) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.news-grid-3up-feature {
+  grid-column: span 3;
+  height: 338px;
+  background: grey;
+
+  @media screen and (max-width: $breakpoint-small) {
+    grid-column: span 4;
+  }
+}
+
+.news-grid-3up-item {
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: $breakpoint-small) {
+    grid-column: span 2;
+    }
+
+  @media screen and (max-width: $breakpoint-tiny) {
+    grid-column: span 4;
+  }
+}
+
+.news-grid-2up {
+  display: grid;
+  grid-gap: $space-large $space-medium;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: $space-large;
+}
+
+.news-grid-2up-feature {
+  grid-column: span 2;
+  height: 338px;
+  background: grey;
+}
+
+.news-grid-2up-item {
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: $breakpoint-small) {
+    grid-column: span 2;
+    }
+}
+
+.news-grid-item-title {
+  margin-bottom: $space-x-small;
+}

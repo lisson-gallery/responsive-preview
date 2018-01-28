@@ -25,9 +25,11 @@
 // 5. Components
 @import
   'components/button',
-  'components/lists';
+  'components/lists',
+  'components/news-grid';
 
 // 6. Page-specific styles
 @import
   'pages/home',
-  'pages/artists';
+  'pages/artists',
+  'pages/news';
