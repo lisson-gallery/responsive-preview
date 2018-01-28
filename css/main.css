@@ -706,9 +706,10 @@ body {
       grid-template-columns: repeat(4, 1fr); } }
 
 .news-grid-3up-feature {
-  grid-column: span 3;
-  height: 338px;
-  background: grey; }
+  grid-column: span 3; }
+  .news-grid-3up-feature img {
+    width: 100%;
+    max-width: 100%; }
   @media screen and (max-width: 640px) {
     .news-grid-3up-feature {
       grid-column: span 4; } }
