@@ -1,0 +1,10 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+.page-shop > main {
+  margin-bottom: $space-large;
+
+  @media screen and (max-width: $breakpoint-small) {
+  }
+}

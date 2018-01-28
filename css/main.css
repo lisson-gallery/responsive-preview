@@ -452,6 +452,10 @@ h2,
 .font-brand {
   font-family: "GillSansWGL", "Gill Sans WGL Regular", "Gill Sans MT", "Gill Sans", GillSans, Calibri, sans-serif; }
 
+.paragraph {
+  font-size: 16px;
+  line-height: 1.5; }
+
 /**
  * Clear inner floats
  */
@@ -489,6 +493,9 @@ h2,
 
 .no-margin {
   margin: 0; }
+
+.no-margin-bottom {
+  margin-bottom: 0; }
 
 #brand-link {
   padding: 24px 0;
