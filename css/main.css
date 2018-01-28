@@ -489,13 +489,17 @@ h2 {
   margin: 0; }
 
 #brand-link {
-  background: url("../assets/lisson-gallery-logo.svg") no-repeat;
-  width: 310px;
-  height: 20px;
-  max-width: 100%; }
+  padding: 24px 0;
+  display: block; }
+  #brand-link img {
+    height: auto;
+    max-width: 310px;
+    display: block; }
   @media screen and (max-width: 640px) {
     #brand-link {
-      margin-right: 24px; } }
+      margin-right: 24px; }
+      #brand-link img {
+        max-width: 100%; } }
 
 #nav {
   font-size: 20px; }
@@ -518,7 +522,7 @@ h2 {
   .menu {
     text-align: right;
     height: 0;
-    padding-top: 66px;
+    padding-top: 64px;
     padding-right: 0;
     transition: height .2s ease-out; }
 
@@ -526,7 +530,7 @@ h2 {
     cursor: pointer;
     display: inline-block;
     float: right;
-    padding: 34px 0 30px 24px;
+    padding: 32px 0 28px 24px;
     position: relative;
     user-select: none; }
 
@@ -581,7 +585,7 @@ body {
   @media screen and (max-width: 1024px) {
     body {
       grid-template-areas: "header header header aside" "main main main main" "main main main main" "footer footer footer footer";
-      grid-template-columns: auto;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       padding: 0 24px; } }
   @media screen and (max-width: 640px) {
     body {

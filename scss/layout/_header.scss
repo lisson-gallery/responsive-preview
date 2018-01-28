@@ -3,13 +3,20 @@
 // -----------------------------------------------------------------------------
 
 #brand-link {
-  background: url('../assets/lisson-gallery-logo.svg') no-repeat;
-  width: 310px;
-  height: 20px;
-  max-width: 100%;
+  padding: $space-medium 0;
+  display: block;
+
+  img {
+    height: auto;
+    max-width: 310px;
+    display: block;
+  }
 
   @media screen and (max-width: $breakpoint-small) {
-
     margin-right: $space-medium;
+
+    img {
+      max-width: 100%;
+    }
   }
 }
