@@ -452,9 +452,10 @@ h2,
 .font-brand {
   font-family: "GillSansWGL", "Gill Sans WGL Regular", "Gill Sans MT", "Gill Sans", GillSans, Calibri, sans-serif; }
 
+p,
 .paragraph {
   font-size: 16px;
-  line-height: 1.5; }
+  line-height: 1.35; }
 
 /**
  * Clear inner floats
@@ -493,9 +494,6 @@ h2,
 
 .no-margin {
   margin: 0; }
-
-.no-margin-top {
-  margin-bottom: 0; }
 
 .no-margin-bottom {
   margin-bottom: 0; }
