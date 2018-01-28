@@ -599,8 +599,6 @@ body {
   @media screen and (max-width: 640px) {
     body {
       padding: 0; } }
-  body > * {
-    border: 1px solid yellow; }
   body > header {
     grid-area: header; }
     @media screen and (max-width: 640px) {
