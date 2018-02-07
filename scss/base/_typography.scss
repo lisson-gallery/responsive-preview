@@ -21,13 +21,19 @@ h2,
   margin-bottom: $space-medium;
 }
 
-.font-brand {
-  font-family: $brand-font-stack;
+h3,
+.heading-3 {
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: $space-small;
 }
-
 
 p,
 .paragraph {
   font-size: 16px;
   line-height: 1.35;
+}
+
+.font-brand {
+  font-family: $brand-font-stack;
 }
