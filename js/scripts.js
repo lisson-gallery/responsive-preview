@@ -1,3 +1,7 @@
+//
+// Exhibitions > Previous toggle
+//
+
 var toggle = document.getElementById("toggle-previous-exhibitions"),
     container = document.getElementById("previous-exhibitions");
 

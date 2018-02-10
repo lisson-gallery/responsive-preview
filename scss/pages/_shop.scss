@@ -4,7 +4,8 @@
 
 .page-shop > main {
   margin-bottom: $space-large;
+}
 
-  @media screen and (max-width: $breakpoint-small) {
-  }
+.shop-wrapper {
+  max-width: 32rem;
 }
