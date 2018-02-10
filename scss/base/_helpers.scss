@@ -39,6 +39,10 @@
   width: 1px;
 }
 
+/**
+ * Show/hide depending on breakpoints
+ */
+
 .show-tiny {
   display: none;
 
@@ -54,6 +58,33 @@
     display: none;
   }
 }
+
+/**
+ * Container widths
+ */
+
+.full-width {
+  width: 100%;
+  max-width: 100%;
+}
+
+/**
+ * Space between sections
+ */
+
+.space-top {
+  padding-top: $space-medium;
+  margin-top: $space-large;
+}
+
+.space-bottom {
+  padding-bottom: $space-medium;
+  margin-bottom: $space-large;
+}
+
+/**
+ * Remove margins
+ */
 
 .no-margin {
   margin: 0;
