@@ -465,6 +465,9 @@ p,
   .list-body li:last-of-type {
     margin-bottom: 0; }
 
+.emphasis {
+  font-style: italic; }
+
 .small {
   font-size: 14px; }
   @media screen and (max-width: 375px) {
