@@ -72,12 +72,17 @@
  * Space between sections
  */
 
-.space-top {
+.space-top-l {
   padding-top: $space-medium;
   margin-top: $space-large;
 }
 
-.space-bottom {
+.space-bottom-m {
+  padding-bottom: $space-small;
+  margin-bottom: $space-medium;
+}
+
+.space-bottom-l {
   padding-bottom: $space-medium;
   margin-bottom: $space-large;
 }
