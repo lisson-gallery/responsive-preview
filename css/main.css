@@ -477,6 +477,9 @@ p,
 .font-brand {
   font-family: "GillSansWGL", "Gill Sans WGL Regular", "Gill Sans MT", "Gill Sans", GillSans, Calibri, sans-serif; }
 
+.text-right {
+  text-align: right; }
+
 /**
  * Clear inner floats
  */
@@ -556,10 +559,10 @@ p,
   margin: 0; }
 
 .no-margin-top {
-  margin-top: 0; }
+  margin-top: 0 !important; }
 
 .no-margin-bottom {
-  margin-bottom: 0; }
+  margin-bottom: 0 !important; }
 
 #brand-link {
   padding: 24px 0;
@@ -753,12 +756,33 @@ body {
   font-size: 12px;
   line-height: 1.5; }
 
+.link-icon {
+  display: inline-block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+  width: 1rem;
+  height: 1rem; }
+  .link-icon.link-icon-grid {
+    background-image: url(../assets/icon-grid.svg); }
+
 .no-list {
   list-style: none;
   padding-left: 0; }
 
 .inline-list li {
   display: inline; }
+
+.list-icons a {
+  padding: 12px 0 12px 24px;
+  display: inline-block;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px; }
+  .list-icons a.list-icon-link {
+    background-image: url(../assets/icon-link@2x.png); }
+  .list-icons a.list-icon-file {
+    background-image: url(../assets/icon-file@2x.png); }
 
 .masonry-grid {
   -moz-column-count: 3;
@@ -957,5 +981,13 @@ body {
 
 .shop-wrapper {
   max-width: 32rem; }
+
+.basket {
+  padding-top: 3px; }
+
+@media screen and (max-width: 640px) {
+  .basket,
+  .shop-title {
+    grid-column: span 1 !important; } }
 
 /*# sourceMappingURL=main.css.map */

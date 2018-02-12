@@ -12,3 +12,21 @@
     display: inline;
   }
 }
+
+.list-icons {
+  a {
+    padding: $space-small 0 $space-small $space-medium;
+    display: inline-block;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+
+    &.list-icon-link {
+      background-image: url(../assets/icon-link@2x.png);
+    }
+
+    &.list-icon-file {
+      background-image: url(../assets/icon-file@2x.png);
+    }
+  }
+}

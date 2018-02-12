@@ -39,8 +39,7 @@ p,
 }
 
 .emphasis {
-  font-style: italic;
-}
+  font-style: italic; }
 
 .small {
   font-size: 14px;
@@ -52,3 +51,6 @@ p,
 
 .font-brand {
   font-family: $brand-font-stack; }
+
+.text-right {
+  text-align: right; }
