@@ -52,8 +52,13 @@
             Mexico City, Mexico<br />
             February 7 – 11</p>
             <p>
-              <a class="font-brand" href="#">Read more</a>
+              <a id="toggle-exhib1" class="font-brand" href="javascript:void(0)">Read more</a>
             </p>
+            <div id="exhib1" style="display:none">
+              Pudissum nobisi offictur, se quo officiet volorepudis si ommoles evellorecum
+              fuga. Os aut dolorro molor mi, sed eos ut aut reprate verehendis volupti
+              ssenimus et fuga. Ut volo bea explateni odicimus, tore, comnimintis ex earum fuga.
+            </div>
           </div>
 
           <div class="news-grid-3up-item">
@@ -147,7 +152,19 @@
       <!--<script src="js/vendor/modernizr-3.5.0.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-      <script src="js/plugins.js"></script>
-      <script src="js/main.js"></script>-->
+      <script src="js/plugins.js"></script>-->
+      <script src="js/scripts.js"></script>
+      <script>
+        var exhib1 = document.getElementById("toggle-exhib1"),
+          exhib1Container = document.getElementById("exhib1");
+
+        exhib1.addEventListener("click", function(){
+          if (exhib1Container.style.display == 'none') {
+            exhib1Container.style.display = 'block';
+          } else {
+            exhib1Container.style.display = 'none';
+          }
+        }, false);
+      </script>
     </body>
 </html>
