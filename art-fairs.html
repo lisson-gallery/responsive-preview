@@ -118,9 +118,53 @@
 
         </div>
 
-        <h2><a href="#">Previous</a></h2>
+        <h2><a id="toggle-previous-artfairs" href="javascript:void(0)">Previous</a></h2>
 
+        <div id="previous-artfairs" class="news-grid-3up" style="display:none">
 
+          <div class="news-grid-3up-item">
+            <p>Zona Maco<br />
+            Centro Citibanamex, Hall D<br />
+            Mexico City, Mexico<br />
+            February 7 – 11</p>
+          </div>
+
+          <div class="news-grid-3up-item">
+            <p>Zona Maco<br />
+            Centro Citibanamex, Hall D<br />
+            Mexico City, Mexico<br />
+            February 7 – 11</p>
+          </div>
+
+          <div class="news-grid-3up-item">
+            <p>Zona Maco<br />
+            Centro Citibanamex, Hall D<br />
+            Mexico City, Mexico<br />
+            February 7 – 11</p>
+          </div>
+
+          <div class="news-grid-3up-item">
+            <p>Zona Maco<br />
+            Centro Citibanamex, Hall D<br />
+            Mexico City, Mexico<br />
+            February 7 – 11</p>
+          </div>
+
+          <div class="news-grid-3up-item">
+            <p>Zona Maco<br />
+            Centro Citibanamex, Hall D<br />
+            Mexico City, Mexico<br />
+            February 7 – 11</p>
+          </div>
+
+          <div class="news-grid-3up-item">
+            <p>Zona Maco<br />
+            Centro Citibanamex, Hall D<br />
+            Mexico City, Mexico<br />
+            February 7 – 11</p>
+          </div>
+
+        </div>
 
       </main>
 
@@ -153,8 +197,18 @@
       <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
       <script src="js/plugins.js"></script>-->
-      <script src="js/scripts.js"></script>
       <script>
+        var artfairs = document.getElementById("toggle-previous-artfairs"),
+          prevContainer = document.getElementById("previous-artfairs");
+
+        artfairs.addEventListener("click", function(){
+          if (prevContainer.style.display == 'none') {
+            prevContainer.style.display = 'grid';
+          } else {
+            prevContainer.style.display = 'none';
+          }
+        }, false);
+
         var exhib1 = document.getElementById("toggle-exhib1"),
           exhib1Container = document.getElementById("exhib1");
 
