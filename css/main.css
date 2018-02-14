@@ -564,6 +564,19 @@ p,
 .no-margin-bottom {
   margin-bottom: 0 !important; }
 
+/**
+ * Remove underline on links
+ */
+.link-discreet {
+  text-decoration: none !important; }
+  .link-discreet:hover, .link-discreet:active, .link-discreet:focus {
+    text-decoration: underline; }
+
+.link-visible {
+  text-decoration: underline !important; }
+  .link-visible:hover, .link-visible:active, .link-visible:focus {
+    text-decoration: underline; }
+
 #brand-link {
   padding: 24px 0;
   display: block; }
@@ -755,6 +768,14 @@ body {
   grid-row: 3;
   font-size: 12px;
   line-height: 1.5; }
+  .footer-legal a:link,
+  .footer-legal a:visited {
+    text-decoration: none;
+    text-transform: uppercase; }
+  .footer-legal a:hover,
+  .footer-legal a:active,
+  .footer-legal a:focus {
+    text-decoration: underline; }
 
 .link-icon {
   display: inline-block;
@@ -973,11 +994,21 @@ body {
   .artists-list a:visited {
     text-decoration: none; }
 
+.page-exhibitions main a:link,
+.page-exhibitions main a:visited {
+  text-decoration: none; }
+
 .page-news > main {
   margin-bottom: 48px; }
+  .page-news > main a:link,
+  .page-news > main a:visited {
+    text-decoration: none; }
 
 .page-shop > main {
   margin-bottom: 48px; }
+  .page-shop > main a:link,
+  .page-shop > main a:visited {
+    text-decoration: none; }
 
 .shop-wrapper {
   max-width: 32rem; }
@@ -989,5 +1020,19 @@ body {
   .basket,
   .shop-title {
     grid-column: span 1 !important; } }
+
+.page-contact-artfairs > main a:link,
+.page-contact-artfairs > main a:visited,
+.page-contact-artists > main a:link,
+.page-contact-artists > main a:visited,
+.page-contact-finance > main a:link,
+.page-contact-finance > main a:visited,
+.page-contact-media > main a:link,
+.page-contact-media > main a:visited,
+.page-contact-operations > main a:link,
+.page-contact-operations > main a:visited,
+.page-contact-sales > main a:link,
+.page-contact-sales > main a:visited {
+  text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */

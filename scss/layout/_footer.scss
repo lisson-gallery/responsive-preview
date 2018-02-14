@@ -70,4 +70,15 @@
   grid-row: 3;
   font-size: 12px;
   line-height: 1.5;
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  a:hover,
+  a:active,
+  a:focus {
+    text-decoration: underline;
+  }
 }

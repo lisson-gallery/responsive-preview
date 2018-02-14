@@ -2,11 +2,16 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 
-.page-exhibitions {
-  main {
+.page-contact-artfairs,
+.page-contact-artists,
+.page-contact-finance,
+.page-contact-media,
+.page-contact-operations,
+.page-contact-sales {
+
+  > main {
     a:link,
     a:visited {
-      text-decoration: none;
-    }
+      text-decoration: none; }
   }
 }

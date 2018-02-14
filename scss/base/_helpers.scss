@@ -8,8 +8,7 @@
 .clearfix::after {
   clear: both;
   content: '';
-  display: table;
-}
+  display: table; }
 
 /**
  * Hide text while making it readable for screen readers
@@ -20,8 +19,7 @@
   overflow: hidden;
   padding: 0; /* 1 */
   text-indent: 101%;
-  white-space: nowrap;
-}
+  white-space: nowrap; }
 
 /**
  * Hide element while making it readable for screen readers
@@ -36,8 +34,7 @@
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px;
-}
+  width: 1px; }
 
 /**
  * Show/hide depending on breakpoints
@@ -47,16 +44,14 @@
   display: none;
 
   @media screen and (max-width: $breakpoint-tiny) {
-    display: block;
-  }
+    display: block; }
 }
 
 .hide-tiny {
   display: block;
 
   @media screen and (max-width: $breakpoint-tiny) {
-    display: none;
-  }
+    display: none; }
 }
 
 /**
@@ -65,8 +60,7 @@
 
 .full-width {
   width: 100%;
-  max-width: 100%;
-}
+  max-width: 100%; }
 
 /**
  * Space between sections
@@ -74,31 +68,47 @@
 
 .space-top-l {
   padding-top: $space-medium;
-  margin-top: $space-large;
-}
+  margin-top: $space-large; }
 
 .space-bottom-m {
   padding-bottom: $space-small;
-  margin-bottom: $space-medium;
-}
+  margin-bottom: $space-medium; }
 
 .space-bottom-l {
   padding-bottom: $space-medium;
-  margin-bottom: $space-large;
-}
+  margin-bottom: $space-large; }
 
 /**
  * Remove margins
  */
 
 .no-margin {
-  margin: 0;
-}
+  margin: 0; }
 
 .no-margin-top {
-  margin-top: 0 !important;
-}
+  margin-top: 0 !important; }
 
 .no-margin-bottom {
-  margin-bottom: 0 !important;
+  margin-bottom: 0 !important; }
+
+/**
+ * Remove underline on links
+ */
+
+.link-discreet {
+  text-decoration: none !important;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: underline; }
+}
+
+.link-visible {
+  text-decoration: underline !important;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: underline; }
 }

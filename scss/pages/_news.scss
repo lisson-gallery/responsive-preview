@@ -5,6 +5,7 @@
 .page-news > main {
   margin-bottom: $space-large;
 
-  @media screen and (max-width: $breakpoint-small) {
-  }
+  a:link,
+  a:visited {
+    text-decoration: none; }
 }
