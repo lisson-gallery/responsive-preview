@@ -179,8 +179,10 @@
         overview.addEventListener("click", function(){
           if (overviewContainer.style.display == 'none') {
             overviewContainer.style.display = 'block';
+            overview.innerHTML = 'Read less';
           } else {
             overviewContainer.style.display = 'none';
+            overview.innerHTML = 'Read more';
           }
         }, false);
       </script>

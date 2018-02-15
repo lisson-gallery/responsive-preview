@@ -215,8 +215,10 @@
         exhib1.addEventListener("click", function(){
           if (exhib1Container.style.display == 'none') {
             exhib1Container.style.display = 'block';
+            exhib1.innerHTML = 'Read less';
           } else {
             exhib1Container.style.display = 'none';
+            exhib1.innerHTML = 'Read more';
           }
         }, false);
       </script>
