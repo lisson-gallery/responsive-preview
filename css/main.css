@@ -455,6 +455,12 @@ h3,
   line-height: 1.2;
   margin-bottom: 12px; }
 
+h4,
+.heading-4 {
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 12px; }
+
 p,
 .paragraph {
   font-size: 16px;

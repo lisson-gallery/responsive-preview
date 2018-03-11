@@ -41,7 +41,8 @@
 
       <main>
 
-        <h2>Current &amp; Forthcoming</h2>
+        <h2 class="hide-tiny" aria-hidden="true">Current &amp; Forthcoming</h2>
+        <h2 class="show-tiny">Current &amp; Forthcoming Art Fairs</h2>
 
         <div class="news-grid-3up">
 
@@ -118,7 +119,12 @@
 
         </div>
 
-        <h2><a id="toggle-previous-artfairs" href="javascript:void(0)">Previous</a></h2>
+        <h2 class="hide-tiny" aria-hidden="true">
+          <a id="toggle-previous-artfairs" href="javascript:void(0)">Previous</a>
+        </h2>
+        <h2 class="show-tiny">
+          <a id="toggle-previous-artfairs-2" href="javascript:void(0)">Previous Art Fairs</a>
+        </h2>
 
         <div id="previous-artfairs" class="news-grid-3up" style="display:none">
 
@@ -182,10 +188,6 @@
           <li><a class="hide-text icon-soundcloud" href="#">Soundcloud</a></li>
         </ul>
 
-        <div class="footer-newsletter font-brand">
-          <a href="#">Newsletter</a>
-        </div>
-
         <p class="footer-legal font-brand">
           Lisson Gallery London Limited | Incorporated in England & Wales Company Number 1691363 | 52-54 Bell Street, London, NW1 5DA
           <br />
@@ -199,6 +201,17 @@
       <script src="js/plugins.js"></script>-->
       <script>
         var artfairs = document.getElementById("toggle-previous-artfairs"),
+          prevContainer = document.getElementById("previous-artfairs");
+
+        artfairs.addEventListener("click", function(){
+          if (prevContainer.style.display == 'none') {
+            prevContainer.style.display = 'grid';
+          } else {
+            prevContainer.style.display = 'none';
+          }
+        }, false);
+
+        var artfairs = document.getElementById("toggle-previous-artfairs-2"),
           prevContainer = document.getElementById("previous-artfairs");
 
         artfairs.addEventListener("click", function(){
