@@ -85,11 +85,21 @@
 .no-margin {
   margin: 0; }
 
-.no-margin-top {
+.mt-0 {
   margin-top: 0 !important; }
 
-.no-margin-bottom {
+.mb-0 {
   margin-bottom: 0 !important; }
+
+/**
+ * Add margins
+ */
+
+.mt-2 {
+  margin-top: 2rem; }
+
+.mb-2 {
+  margin-bottom: 2rem; }
 
 /**
  * Remove underline on links

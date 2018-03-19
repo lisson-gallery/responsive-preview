@@ -2,9 +2,15 @@
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
 
-.no-list {
+.no-bullets {
   list-style: none;
   padding-left: 0;
+}
+
+.list {
+  li:not(:last-of-type) {
+    margin-bottom: .25rem;
+  }
 }
 
 .inline-list {
@@ -19,7 +25,7 @@
     display: inline-block;
     background-position: left center;
     background-repeat: no-repeat;
-    background-size: 16px 16px;
+    background-size: 1rem 1rem;
 
     &.list-icon-link {
       background-image: url(../assets/icon-link@2x.png);

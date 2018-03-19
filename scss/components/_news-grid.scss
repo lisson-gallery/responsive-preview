@@ -7,6 +7,7 @@
  */
 
 .news-grid-item-title {
+  margin-top: 0;
   margin-bottom: $space-x-small; }
 
 /*
@@ -54,7 +55,14 @@
 .news-grid-4up-item {
   img {
     width: 100%;
-    max-width: 100%; }
+    max-width: 100%;
+    margin-bottom: $space-small; }
+  p {
+    margin: 0;
+  }
+  p+p {
+    margin-top: $space-small;
+  }
 }
 
 /*
@@ -87,7 +95,14 @@
 .news-grid-3up-item {
   img {
     width: 100%;
-    max-width: 100%; }
+    max-width: 100%;
+    margin-bottom: $space-small; }
+  p {
+    margin: 0;
+  }
+  p+p {
+    margin-top: $space-small;
+  }
 
   @media screen and (max-width: $breakpoint-small) {
     grid-column: span 2;

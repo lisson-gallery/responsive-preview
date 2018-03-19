@@ -14,3 +14,12 @@
     background-image: url(../assets/icon-grid.svg);
   }
 }
+
+.button-submit {
+  border-radius: 6px;
+  border: 1px solid #acacac;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  background: white;
+  padding: 2px 8px 3px;
+  font-size: 14px;
+}

@@ -1,0 +1,53 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the form component.
+// -----------------------------------------------------------------------------
+
+.form {
+  li {
+    margin-bottom: 1rem;
+  }
+}
+
+.label-inline {
+  display: inline-block;
+  margin-bottom: .25rem;
+  width: 8rem;
+}
+
+.input {
+  border: 1px solid #000;
+  border-radius: 0;
+  box-shadow: none;
+  height: auto;
+  line-height: normal;
+  background: #fff;
+  margin-bottom: 0;
+  width: 18rem;
+  padding: 4px 6px;
+  font-size: .875rem;
+  vertical-align: top;
+}
+
+.select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-position: right 50%;
+  background-repeat: no-repeat;
+}
+
+.checkbox-set {
+  margin-bottom: $space-small;
+
+  & > input[type=checkbox],
+  & > input[type=radio] {
+    margin-right: 4px; }
+
+  & > input[type=checkbox],
+  & > input[type=radio],
+  & > label {
+    display: inline-block; }
+}
+
+.newsletter-optin {
+  margin-left: 8.2rem;
+}

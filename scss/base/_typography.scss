@@ -16,13 +16,23 @@ h2,
   font-size: 20px;
   line-height: 1.2;
   margin-top: 0;
-  margin-bottom: $space-medium; }
+  margin-bottom: $space-medium;
+
+  @media screen and (max-width: $breakpoint-tiny) {
+    font-size: 22px;
+  }
+}
 
 h3,
 .heading-3 {
   font-size: 18px;
   line-height: 1.2;
-  margin-bottom: $space-small; }
+  margin-bottom: $space-small;
+
+  @media screen and (max-width: $breakpoint-tiny) {
+    font-size: 20px;
+  }
+}
 
 h4,
 .heading-4 {
