@@ -763,7 +763,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 16px;
-    width: 32px;
+    width: 24px;
     height: 32px;
     display: inline-block; }
   @media screen and (max-width: 640px) {
@@ -780,7 +780,9 @@ body {
   background-image: url("../assets/icon-instagram.svg"); }
 
 .icon-soundcloud {
-  background-image: url("../assets/icon-soundcloud.svg"); }
+  background-image: url("../assets/icon-soundcloud.svg");
+  width: 28px !important;
+  background-size: 20px !important; }
 
 .icon-twitter {
   background-image: url("../assets/icon-twitter.svg"); }
@@ -1067,7 +1069,8 @@ body {
 
 .slider-image {
   /* was archive-image */
-  /*max-height:80vh;*/ }
+  max-height: 32rem;
+  width: auto; }
 
 .row-relative {
   position: relative; }
