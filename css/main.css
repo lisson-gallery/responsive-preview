@@ -944,6 +944,30 @@ body {
   grid-column: span 2; }
 
 /*
+ * 5 columns
+ */
+.news-grid-5up {
+  display: grid;
+  grid-gap: 24px 12px;
+  grid-template-columns: repeat(5, 1fr);
+  margin-bottom: 48px; }
+  @media screen and (max-width: 768px) {
+    .news-grid-5up {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media screen and (max-width: 375px) {
+    .news-grid-5up {
+      grid-template-columns: 1fr; } }
+
+.news-grid-5up-item img {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 12px; }
+.news-grid-5up-item p {
+  margin: 0; }
+.news-grid-5up-item p + p {
+  margin-top: 12px; }
+
+/*
  * 4 columns
  */
 .news-grid-4up {
@@ -1078,14 +1102,16 @@ body {
 .slider-nav-left,
 .slider-nav-right {
   display: inline-block;
+  background-color: rgba(255, 255, 255, 0.35);
   background-repeat: no-repeat;
-  background-size: 2rem;
+  background-size: 1.125rem;
+  background-position: .5rem center;
   height: 100%;
-  width: 20%;
+  width: 2rem;
   text-indent: -100000px;
   position: absolute;
   top: 0;
-  opacity: .5;
+  opacity: 0;
   z-index: 2; }
 
 .slider-nav-left:hover,
@@ -1096,30 +1122,18 @@ body {
 .slider-nav-right:focus {
   opacity: 1;
   cursor: pointer;
-  -moz-transition: opacity .6s ease-out;
-  -webkit-transition: opacity .6s ease-out;
-  -o-transition: opacity .6s ease-out;
-  transition: opacity .6s ease-out; }
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+  transition: opacity .5s ease-out; }
 
 .slider-nav-left {
   background-image: url("../assets/arrow-left.svg");
-  background-position: left 12px center;
   left: 0; }
 
 .slider-nav-right {
   background-image: url("../assets/arrow-right.svg");
-  background-position: right 12px center;
   right: 0; }
-
-.page-home > main {
-  display: grid;
-  grid-gap: 48px 24px;
-  grid-template-columns: repeat(3, 1fr);
-  margin-bottom: 48px; }
-  @media screen and (max-width: 640px) {
-    .page-home > main {
-      grid-gap: 12px 12px;
-      grid-template-columns: repeat(4, 1fr); } }
 
 .page-artists > main {
   margin-bottom: 48px; }

@@ -34,6 +34,38 @@
   grid-column: span 2; }
 
 /*
+ * 5 columns
+ */
+
+.news-grid-5up {
+  display: grid;
+  grid-gap: $space-medium $space-small;
+  grid-template-columns: repeat(5, 1fr);
+  margin-bottom: $space-large;
+
+  @media screen and (max-width: $breakpoint-medium) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: $breakpoint-tiny) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.news-grid-5up-item {
+  img {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: $space-small; }
+  p {
+    margin: 0;
+  }
+  p+p {
+    margin-top: $space-small;
+  }
+}
+
+/*
  * 4 columns
  */
 

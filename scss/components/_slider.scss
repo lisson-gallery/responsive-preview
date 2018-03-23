@@ -32,15 +32,17 @@
 .slider-nav-left,
 .slider-nav-right {
   display: inline-block;
+  background-color: rgba(255,255,255,.35);
   background-repeat: no-repeat;
-  background-size: 2rem;
+  background-size: 1.125rem;
+  background-position: .5rem center;
   height: 100%;
-  width: 20%;
+  width: 2rem;
   text-indent: -100000px;
   position: absolute;
   top: 0;
-  opacity: .5;
-  z-index:2;
+  opacity: 0;
+  z-index: 2;
 }
 
 .slider-nav-left:hover,
@@ -51,20 +53,18 @@
 .slider-nav-right:focus {
   opacity: 1;
   cursor: pointer;
-  -moz-transition: opacity .6s ease-out;
-  -webkit-transition: opacity .6s ease-out;
-  -o-transition: opacity .6s ease-out;
-  transition: opacity .6s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+  transition: opacity .5s ease-out;
 }
 
 .slider-nav-left {
   background-image: url('../assets/arrow-left.svg');
-  background-position: left 12px center;
   left: 0;
 }
 
 .slider-nav-right {
   background-image: url('../assets/arrow-right.svg');
-  background-position: right 12px center;
   right: 0;
 }
