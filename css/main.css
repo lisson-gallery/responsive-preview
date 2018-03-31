@@ -1099,6 +1099,15 @@ body {
   max-height: 32rem;
   width: auto; }
 
+.slider-image:hover .slider-nav-left,
+.slider-image:hover .slider-nav-right {
+  opacity: 1;
+  cursor: pointer;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+  transition: opacity .5s ease-out; }
+
 .row-relative {
   position: relative; }
 
