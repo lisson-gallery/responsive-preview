@@ -822,6 +822,12 @@ body {
   height: 1rem; }
   .link-icon.link-icon-grid {
     background-image: url(../assets/icon-grid.svg); }
+  .link-icon.link-icon-arrow-left {
+    background-image: url(../assets/arrow-left-s.svg);
+    background-size: .9rem .9rem; }
+  .link-icon.link-icon-arrow-right {
+    background-image: url(../assets/arrow-right-s.svg);
+    background-size: .9rem .9rem; }
 
 .button-submit {
   border-radius: 6px;

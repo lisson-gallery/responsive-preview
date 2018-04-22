@@ -11,8 +11,15 @@
   height: 1rem;
 
   &.link-icon-grid {
-    background-image: url(../assets/icon-grid.svg);
-  }
+    background-image: url(../assets/icon-grid.svg); }
+
+  &.link-icon-arrow-left {
+    background-image: url(../assets/arrow-left-s.svg);
+    background-size: .9rem .9rem; }
+
+  &.link-icon-arrow-right {
+    background-image: url(../assets/arrow-right-s.svg);
+    background-size: .9rem .9rem; }
 }
 
 .button-submit {
