@@ -497,6 +497,9 @@ p,
 .text-center {
   text-align: center; }
 
+.text-uppercase {
+  text-transform: uppercase; }
+
 /**
  * Clear inner floats
  */
@@ -587,6 +590,9 @@ p,
 /**
  * Add margins
  */
+.mt-0 {
+  margin-top: 0; }
+
 .mt-2 {
   margin-top: 2rem; }
 
@@ -1152,6 +1158,77 @@ body {
 .slider-nav-right {
   background-image: url("../assets/arrow-right.svg");
   right: 0; }
+
+.timeline {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 48px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 4px;
+  border-left: 2px solid #999999; }
+  .timeline .tag {
+    margin-bottom: -1rem; }
+    .timeline .tag::before, .timeline .tag::after {
+      display: none; }
+  .timeline li {
+    position: relative; }
+  .timeline li::after {
+    position: absolute;
+    top: 4px;
+    left: -3.45rem;
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: #999999;
+    border-radius: 12px; }
+  .timeline .timeline-upcoming::before {
+    position: absolute;
+    top: 2px;
+    left: -11rem;
+    content: "Upcoming";
+    font-family: "GillSansWGL", "Gill Sans WGL Regular", "Gill Sans MT", "Gill Sans", GillSans, Calibri, sans-serif;
+    text-transform: uppercase;
+    display: block; }
+  .timeline .timeline-upcoming + li::before {
+    position: absolute;
+    top: 2px;
+    left: -8rem;
+    content: "Past";
+    font-family: "GillSansWGL", "Gill Sans WGL Regular", "Gill Sans MT", "Gill Sans", GillSans, Calibri, sans-serif;
+    text-transform: uppercase;
+    display: block; }
+  .timeline li:first-of-type:not(.timeline-upcoming)::before {
+    position: absolute;
+    top: 2px;
+    left: -8rem;
+    content: "Past";
+    font-family: "GillSansWGL", "Gill Sans WGL Regular", "Gill Sans MT", "Gill Sans", GillSans, Calibri, sans-serif;
+    text-transform: uppercase;
+    display: block; }
+  .timeline li + li {
+    margin-top: 48px; }
+  .timeline img {
+    width: 18rem;
+    margin-top: 4px; }
+  @media screen and (max-width: 1024px) {
+    .timeline .timeline-upcoming::before {
+      position: relative;
+      top: initial;
+      left: initial;
+      margin-bottom: 24px; }
+    .timeline .timeline-upcoming + li::before {
+      position: relative;
+      top: initial;
+      left: initial;
+      margin-bottom: 24px; } }
+  @media screen and (max-width: 1024px) {
+    .timeline {
+      padding-left: 24px; }
+      .timeline li::after {
+        top: 2px;
+        left: -1.95rem; } }
 
 .page-artists > main {
   margin-bottom: 48px; }
