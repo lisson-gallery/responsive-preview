@@ -83,3 +83,31 @@
   .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0; }
 }
+
+@media screen and (min-width:0\0) { /* Overrides for IE 9-11: no responsive nav */
+  .menu {
+    text-align: left;
+    height: auto;
+    padding-top: 0;
+    padding-right: 0; }
+
+  .menu-btn {
+    display: none; }
+
+  .menu-icon {
+    display: none; }
+}
+
+@supports (-ms-ime-align:auto) { /* Overrides for Edge 13-14: no responsive nav */
+  .menu {
+    text-align: left;
+    height: auto;
+    padding-top: 0;
+    padding-right: 0; }
+
+  .menu-btn {
+    display: none; }
+
+  .menu-icon {
+    display: none; }
+}
