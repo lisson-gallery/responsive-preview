@@ -38,30 +38,39 @@
  */
 
 .news-grid-5up {
+  overflow: hidden; /* For IE */
+  clear: both; /* For IE */
   display: grid;
   grid-gap: $space-medium $space-small;
   grid-template-columns: repeat(5, 1fr);
   margin-bottom: $space-large;
 
   @media screen and (max-width: $breakpoint-medium) {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    grid-template-columns: repeat(2, 1fr); }
 
   @media screen and (max-width: $breakpoint-tiny) {
-    grid-template-columns: 1fr;
-  }
+    grid-template-columns: 1fr; }
 }
 
 .news-grid-5up-item {
+  width: 19%; /* For IE */
+  float: left; /* For IE */
+  margin-right: 1%; /* For IE */
+  margin-bottom: 20px; /* For IE */
+
   img {
     width: 100%;
     max-width: 100%;
     margin-bottom: $space-small; }
   p {
-    margin: 0;
-  }
+    margin: 0; }
   p+p {
-    margin-top: $space-small;
+    margin-top: $space-small; }
+
+  @supports (display:grid) { /* To cancel IE rules */
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -70,30 +79,39 @@
  */
 
 .news-grid-4up {
+  overflow: hidden; /* For IE */
+  clear: both; /* For IE */
   display: grid;
   grid-gap: $space-medium $space-small;
   grid-template-columns: repeat(4, 1fr);
   margin-bottom: $space-large;
 
   @media screen and (max-width: $breakpoint-medium) {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    grid-template-columns: repeat(2, 1fr); }
 
   @media screen and (max-width: $breakpoint-tiny) {
-    grid-template-columns: 1fr;
-  }
+    grid-template-columns: 1fr; }
 }
 
 .news-grid-4up-item {
+  width: 24%; /* For IE */
+  float: left; /* For IE */
+  margin-right: 1%; /* For IE */
+  margin-bottom: 20px; /* For IE */
+
   img {
     width: 100%;
     max-width: 100%;
     margin-bottom: $space-small; }
   p {
-    margin: 0;
-  }
+    margin: 0; }
   p+p {
-    margin-top: $space-small;
+    margin-top: $space-small; }
+
+  @supports (display:grid) { /* To cancel IE rules */
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -102,6 +120,8 @@
  */
 
 .news-grid-3up {
+  overflow: hidden; /* For IE */
+  clear: both; /* For IE */
   display: grid;
   grid-gap: $space-medium $space-small;
   grid-template-columns: repeat(3, 1fr);
@@ -125,6 +145,11 @@
 }
 
 .news-grid-3up-item {
+  width: 32%; /* For IE */
+  float: left; /* For IE */
+  margin-right: 1%; /* For IE */
+  margin-bottom: 20px; /* For IE */
+
   img {
     width: 100%;
     max-width: 100%;
@@ -143,21 +168,43 @@
   @media screen and (max-width: $breakpoint-tiny) {
     grid-column: span 4;
   }
+
+  @supports (display:grid) { /* To cancel IE rules */
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
 }
 
 .news-grid-3up-focus {
+  margin-bottom: 20px; /* For IE */
   grid-column: span 3;
   display: grid;
   grid-gap: $space-medium;
   grid-template-columns: repeat(3, 1fr);
 
   img {
+    width: 32%; /* For IE */
+    float: left; /* For IE */
+    margin-right: 1%; /* For IE */
     grid-column: 1 / 2;
-    width: 100%;
-    max-width: 100%; }
+
+    @supports (display:grid) { /* To cancel IE rules */
+      width: 100%;
+      max-width: 100%;
+      margin-right: 0;
+    }
+  }
 
   div {
-    grid-column: 2 / 4; }
+    width: 66%; /* For IE */
+    float: left; /* For IE */
+    grid-column: 2 / 4;
+
+    @supports (display:grid) { /* To cancel IE rules */
+      width: auto;
+    }
+  }
 
   @media screen and (max-width: $breakpoint-small) {
     grid-column: span 4;
@@ -178,6 +225,10 @@
     div {
       grid-column: 1 / 4; }
   }
+
+  @supports (display:grid) { /* To cancel IE rules */
+    margin-bottom: 0;
+  }
 }
 
 /*
@@ -185,6 +236,8 @@
  */
 
 .news-grid-2up {
+  overflow: hidden; /* For IE */
+  clear: both; /* For IE */
   display: grid;
   grid-gap: $space-medium $space-medium;
   grid-template-columns: repeat(2, 1fr);
@@ -196,11 +249,21 @@
   background: grey; }
 
 .news-grid-2up-item {
+  width: 49%; /* For IE */
+  float: left; /* For IE */
+  margin-right: 1%; /* For IE */
+  margin-bottom: 20px; /* For IE */
+
   img {
     width: 100%;
     max-width: 100%; }
 
   @media screen and (max-width: $breakpoint-small) {
-    grid-column: span 2;
+    grid-column: span 2; }
+
+  @supports (display:grid) { /* To cancel IE rules */
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 0;
   }
 }

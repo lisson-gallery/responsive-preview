@@ -9,7 +9,7 @@
   margin-top: 0;
   margin-bottom: 0;
   margin-left: $space-x-small;
-  border-left: 2px solid $mid-grey;
+  border-left: 2px solid $dark-grey;
 
   .tag {
     margin-bottom: -1rem;
@@ -32,7 +32,7 @@
     display: block;
     width: $space-small;
     height: $space-small;
-    background: $mid-grey;
+    background: $dark-grey;
     border-radius: $space-small;
   }
 
