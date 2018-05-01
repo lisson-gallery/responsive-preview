@@ -26,14 +26,14 @@
 
   li::after {
     position: absolute;
-    top: $space-x-small;
-    left: -3.4rem;
+    top: 4px;
+    left: -55px;
     content: "";
     display: block;
-    width: $space-small;
-    height: $space-small;
+    width: 12px;
+    height: 12px;
     background: $dark-grey;
-    border-radius: $space-small;
+    border-radius: 12px;
   }
 
   .timeline-upcoming::before {
@@ -96,7 +96,7 @@
 
     li::after {
       top: 2px;
-      left: -1.95rem;
+      left: -30.5px;
     }
   }
 

@@ -1319,7 +1319,7 @@ body {
   .timeline li::after {
     position: absolute;
     top: 4px;
-    left: -3.4rem;
+    left: -55px;
     content: "";
     display: block;
     width: 12px;
@@ -1371,7 +1371,7 @@ body {
       padding-left: 24px; }
       .timeline li::after {
         top: 2px;
-        left: -1.95rem; } }
+        left: -30.5px; } }
 
 .page-artists > main {
   margin-bottom: 48px; }
