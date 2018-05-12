@@ -10,8 +10,8 @@
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
 
-
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="plugins/slider-pro/dist/css/slider-pro.min.css"/>
     </head>
     <body class="page-home">
 
@@ -48,15 +48,33 @@
 
           <h2 class="span-3 mb-0 show-tiny">Current exhibitions</h2>
 
-          <div class="news-grid-3up-feature">
+          <div class="slider-pro news-grid-3up-feature" id="slider-home">
+            <div class="sp-slides slider-image row-relative">
+              <!-- Slide 1 -->
+              <div class="sp-slide">
+                <img class="sp-image" src="assets/home-slider/home-news-feature-1-l@2x-50.jpg"/>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="sp-slide">
+                <img class="sp-image" src="assets/home-slider/home-news-feature-2-l@2x-50.jpg"/>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="sp-slide">
+                <img class="sp-image" src="assets/home-slider/home-news-feature-3-l@2x-50.jpg"/>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="news-grid-3up-feature">
             <div class="slider-image row-relative">
-              <!--<a class="slider-nav-left" href="#">Previous</a>-->
               <a class="slider-nav-right" href="index-2.html">Next</a>
               <img srcset="assets/home-slider/home-news-feature-1-s@2x-50.jpg 952w,
                           assets/home-slider/home-news-feature-1-l@2x-50.jpg 1334w"
                    src="assets/home-slider/home-news-feature-1-l@2x-50.jpg" alt="Feature" />
             </div>
-          </div>
+          </div> -->
 
           <div class="news-grid-3up-feature show-tiny">
             <img src="assets/home-slider/home-news-feature-2-s@2x-50.jpg" />
@@ -159,5 +177,20 @@
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
       <script src="js/plugins.js"></script>
       <script src="js/main.js"></script>-->
+
+      <script src="libs/jquery-1.11.0.min.js"></script>
+      <script src="plugins/slider-pro/dist/js/jquery.sliderPro.min.js"></script>
+
+      <script type="text/javascript">
+      	jQuery( document ).ready(function( $ ) {
+      		$( '#slider-home' ).sliderPro({
+            width: 780,
+            height: 370,
+            slideDistance: 0,
+            arrows: true,
+            buttons: false
+          });
+      	});
+      </script>
     </body>
 </html>
