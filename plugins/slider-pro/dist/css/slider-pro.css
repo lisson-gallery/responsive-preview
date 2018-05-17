@@ -329,8 +329,8 @@
 /* Caption
 --------------------------------------------------*/
 .sp-caption-container {
-	text-align: center;
 	margin-top: 10px;
+	font-family: "GillSansWGL", "Gill Sans WGL Regular", "Gill Sans MT", "Gill Sans", GillSans, Calibri, sans-serif;
 }
 
 /* Full Screen

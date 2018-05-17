@@ -10,8 +10,8 @@
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
 
-
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="plugins/slider-pro/dist/css/slider-pro.min.css"/>
     </head>
     <body class="page-artist">
 
@@ -44,11 +44,59 @@
 
         <div class="mb-2">
           <h2>Marina Abramović</h2>
-          <div class="slider-image row-relative">
-            <!--<a class="slider-nav-left" href="#">Previous</a>-->
-            <img alt="Marina" class="slider-image full-width" src="assets/artist/artist-1@2x-50.jpg" />
+
+          <div class="slider-pro news-grid-3up-feature" id="slider-artist">
+            <div class="sp-slides slider-image row-relative">
+              <!-- Slide 1 -->
+              <div class="sp-slide">
+                <img class="sp-image" src="assets/blank.gif"
+                  data-src="assets/artist/artist-1@2x-50.jpg" />
+
+                <p class="sp-caption font-brand">
+                  <a title="Grid" class="link-icon link-icon-grid d-block mt-half mb-half" href="artist-grid.html"></a>
+                  Marina Abramović<br />
+                  <span class="emphasis">In The Sea of Silence</span>, 2013<br />
+                  Fine art pigment print<br />
+                  160 x 213 cm<br />
+                  63 x 83 7/8 in<br />
+                </p>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="sp-slide">
+                <img class="sp-image" src="assets/blank.gif"
+                  data-src="assets/artist/artist-2@2x-50.jpg" />
+                <p class="sp-caption font-brand">
+                  <a title="Grid" class="link-icon link-icon-grid d-block mt-half mb-half" href="artist-grid.html"></a>
+                  Marina Abramović<br />
+                  <span class="emphasis">Looking at the Mountains</span>, 2010<br />
+                  Colour pigment print<br />
+                  160 x 200 cm<br />
+                  63 x 78 3/4 in<br />
+                </p>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="sp-slide">
+                <img class="sp-image" src="assets/blank.gif"
+                  data-src="assets/artist/artist-3@2x-50.jpg" />
+                <p class="sp-caption font-brand">
+                  <a title="Grid" class="link-icon link-icon-grid d-block mt-half mb-half" href="artist-grid.html"></a>
+                  Marina Abramović<br />
+                  <span class="emphasis">Rhythm</span>, 1974<br />
+                  2 Photographic prints and text<br />
+                  166 x 250 x 165.5 cm<br />
+                  65 3/8 x 98 3/8 x 65 1/4 in<br />
+                </p>
+              </div>
+            </div>
           </div>
-          <!--<img class="full-width" src="assets/artist/artist-1@2x-50.jpg" />-->
+
+          <!--<div class="slider-image row-relative">
+            <a class="slider-nav-left" href="#">Previous</a>
+            <img alt="Marina" class="slider-image full-width" src="assets/artist/artist-1@2x-50.jpg" />
+          </div>-->
+          <!--<img class="full-width" src="assets/artist/artist-1@2x-50.jpg" />
           <p class="font-brand mb-0">
             <a title="Grid" class="link-icon link-icon-grid" href="artist-grid.html"></a>
             <a title="Grid" class="link-icon link-icon-arrow-right" href="artist-2.html"></a>
@@ -57,7 +105,7 @@
           <p class="font-brand no-margin"><span class="emphasis">In The Sea of Silence</span>, 2013</p>
           <p class="font-brand no-margin">Fine art pigment print</p>
           <p class="font-brand no-margin">160 x 213 cm</p>
-          <p class="font-brand no-margin">63 x 83 7/8 in</p>
+          <p class="font-brand no-margin">63 x 83 7/8 in</p>-->
 
           <p>Since the beginning of her career in Belgrade during the early 1970s, Marina Abramović has pioneered performance as a visual
 art form. She created some of the most important early works in this practice, including Rhythm 0 (1974), in which she offered
@@ -158,5 +206,27 @@ performance art.</p>
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
       <script src="js/plugins.js"></script>
       <script src="js/main.js"></script>-->
+
+      <script src="libs/jquery-1.11.0.min.js"></script>
+      <script src="plugins/slider-pro/dist/js/jquery.sliderPro.min.js"></script>
+
+      <script type="text/javascript">
+      	jQuery( document ).ready(function( $ ) {
+      		$( '#slider-artist' ).sliderPro({
+            width: 780,
+            height: 512,
+            autoplay: false,
+            slideDistance: 0,
+            arrows: false,
+            buttons: false,
+            updateHash: true,
+            centerImage: false,
+            allowScaleUp: false,
+            centerSelectedSlide: false,
+            imageScaleMode: 'contain',
+            fadeCaption: false
+          });
+      	});
+      </script>
     </body>
 </html>

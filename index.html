@@ -52,17 +52,29 @@
             <div class="sp-slides slider-image row-relative">
               <!-- Slide 1 -->
               <div class="sp-slide">
-                <img class="sp-image" src="assets/home-slider/home-news-feature-1-l@2x-50.jpg"/>
+                <img class="sp-image" src="assets/blank.gif"
+                  data-src="assets/home-slider/home-news-feature-1-s@2x-50.jpg"
+                  data-small="assets/home-slider/home-news-feature-1-s@2x-50.jpg"
+                  data-medium="assets/home-slider/home-news-feature-1-l@2x-50.jpg"
+                  data-large="assets/home-slider/home-news-feature-1-l@2x-50.jpg"/>
               </div>
 
               <!-- Slide 2 -->
               <div class="sp-slide">
-                <img class="sp-image" src="assets/home-slider/home-news-feature-2-l@2x-50.jpg"/>
+                <img class="sp-image" src="assets/blank.gif"
+                  data-src="assets/home-slider/home-news-feature-2-s@2x-50.jpg"
+                  data-small="assets/home-slider/home-news-feature-2-s@2x-50.jpg"
+                  data-medium="assets/home-slider/home-news-feature-2-l@2x-50.jpg"
+                  data-large="assets/home-slider/home-news-feature-2-l@2x-50.jpg"/>
               </div>
 
               <!-- Slide 3 -->
               <div class="sp-slide">
-                <img class="sp-image" src="assets/home-slider/home-news-feature-3-l@2x-50.jpg"/>
+                <img class="sp-image" src="assets/blank.gif"
+                  data-src="assets/home-slider/home-news-feature-3-s@2x-50.jpg"
+                  data-small="assets/home-slider/home-news-feature-3-s@2x-50.jpg"
+                  data-medium="assets/home-slider/home-news-feature-3-l@2x-50.jpg"
+                  data-large="assets/home-slider/home-news-feature-3-l@2x-50.jpg"/>
               </div>
             </div>
           </div>
@@ -74,7 +86,7 @@
                           assets/home-slider/home-news-feature-1-l@2x-50.jpg 1334w"
                    src="assets/home-slider/home-news-feature-1-l@2x-50.jpg" alt="Feature" />
             </div>
-          </div> -->
+          </div>
 
           <div class="news-grid-3up-feature show-tiny">
             <img src="assets/home-slider/home-news-feature-2-s@2x-50.jpg" />
@@ -82,7 +94,7 @@
 
           <div class="news-grid-3up-feature show-tiny">
             <img src="assets/home-slider/home-news-feature-3-s@2x-50.jpg" />
-          </div>
+          </div> -->
 
         </div>
 
@@ -188,7 +200,17 @@
             height: 370,
             slideDistance: 0,
             arrows: true,
-            buttons: false
+            buttons: false,
+            smallSize: 351,
+            breakpoints: {
+              375: {
+                width: 351,
+                height: 217,
+                arrows: false,
+                buttons: false,
+                autoplay: false
+              }
+            }
           });
       	});
       </script>
