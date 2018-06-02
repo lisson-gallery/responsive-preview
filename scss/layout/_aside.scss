@@ -3,7 +3,11 @@
 // -----------------------------------------------------------------------------
 
 #nav {
-  font-size: 20px;
+  font-size: 18px; /* #NAVUPDATE was 20px */
+
+  & > li { /* #NAVUPDATE */
+    margin-left: 1rem;
+    display: inline-block; }
 
   a:link, a:visited {
     text-decoration: none;
@@ -16,6 +20,12 @@
 
   a:hover, a:active, a:focus {
     text-decoration: underline; }
+
+  @media screen and (max-width: $breakpoint-large) {
+    & > li { /* #NAVUPDATE */
+      margin-left: 0;
+      display: block; }
+  }
 }
 
 .menu-btn {

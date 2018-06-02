@@ -635,7 +635,12 @@ p,
         max-width: 100%; } }
 
 #nav {
-  font-size: 20px; }
+  font-size: 18px;
+  /* #NAVUPDATE was 20px */ }
+  #nav > li {
+    /* #NAVUPDATE */
+    margin-left: 1rem;
+    display: inline-block; }
   #nav a:link, #nav a:visited {
     text-decoration: none;
     display: inline-block;
@@ -644,6 +649,11 @@ p,
       text-decoration: underline; }
   #nav a:hover, #nav a:active, #nav a:focus {
     text-decoration: underline; }
+  @media screen and (max-width: 1024px) {
+    #nav > li {
+      /* #NAVUPDATE */
+      margin-left: 0;
+      display: block; } }
 
 .menu-btn {
   display: none; }
@@ -736,11 +746,19 @@ p,
   .menu-icon {
     display: none; } }
 body {
-  max-width: 1000px;
+  max-width: 1280px;
   margin: auto;
+  padding: 0 1rem;
   display: grid;
-  grid-template-areas: ". header header header" "aside main main main" "aside main main main" "aside footer footer footer";
-  grid-template-columns: minmax(100px, 220px) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr); }
+  /*  grid-template-areas: ". header header header" #NAVUPDATE
+                        "aside main main main"
+                        "aside main main main"
+                        "aside footer footer footer"; */
+  grid-template-areas: "header aside aside aside" "main main main main" "main main main main" "footer footer footer footer";
+  /*  grid-template-columns: minmax(100px, 220px) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);
+  #NAVUPDATE
+  */
+  grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr); }
   @media screen and (max-width: 1024px) {
     body {
       grid-template-areas: "header header header aside" "main main main main" "main main main main" "footer footer footer footer";
@@ -760,7 +778,10 @@ body {
     float: left;
     /* For IE */
     grid-area: aside;
-    padding-top: 48px; }
+    justify-self: end;
+    /* #NAVUPDATE */
+    align-self: center;
+    /* #NAVUPDATE */ }
     @media screen and (max-width: 1024px) {
       body > aside {
         padding-top: initial; } }
@@ -774,7 +795,9 @@ body {
     /* For IE */
     grid-area: main;
     background: white;
-    padding-top: 48px; }
+    /*padding-top: $space-large;*/
+    padding-top: 24px;
+    /* #NAVUPDATE */ }
     @media screen and (max-width: 640px) {
       body > main {
         padding-left: 12px;
@@ -1260,7 +1283,7 @@ body {
 
 .slider-image {
   /* was archive-image */
-  max-height: 32rem;
+  max-height: 36.9375rem;
   width: auto; }
 
 .slider-image:hover .slider-nav-left,
