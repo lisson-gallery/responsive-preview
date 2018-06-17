@@ -8,7 +8,7 @@
   padding-left: $space-large;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: $space-x-small;
+  margin-left: 128px;
   border-left: 2px solid $dark-grey;
 
   .tag {
@@ -75,7 +75,10 @@
     margin-top: $space-x-small;
   }
 
-  @media screen and (max-width: $breakpoint-large) {
+  @media screen and (max-width: $breakpoint-medium) {
+    margin-left: $space-x-small;
+    padding-left: $space-medium;
+
     .timeline-upcoming::before {
       position: relative;
       top: initial;
@@ -89,14 +92,10 @@
       left: initial;
       margin-bottom: $space-medium;
     }
-  }
-
-  @media screen and (max-width: $breakpoint-large) {
-    padding-left: $space-medium;
 
     li::after {
       top: 2px;
-      left: -30.5px;
+      left: -31px;
     }
   }
 

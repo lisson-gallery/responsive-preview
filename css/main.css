@@ -1340,7 +1340,7 @@ body {
   padding-left: 48px;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 4px;
+  margin-left: 128px;
   border-left: 2px solid #444444; }
   .timeline .tag {
     margin-bottom: -1rem; }
@@ -1387,23 +1387,23 @@ body {
   .timeline img {
     width: 18rem;
     margin-top: 4px; }
-  @media screen and (max-width: 1024px) {
-    .timeline .timeline-upcoming::before {
-      position: relative;
-      top: initial;
-      left: initial;
-      margin-bottom: 24px; }
-    .timeline .timeline-upcoming + li::before {
-      position: relative;
-      top: initial;
-      left: initial;
-      margin-bottom: 24px; } }
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 768px) {
     .timeline {
+      margin-left: 4px;
       padding-left: 24px; }
+      .timeline .timeline-upcoming::before {
+        position: relative;
+        top: initial;
+        left: initial;
+        margin-bottom: 24px; }
+      .timeline .timeline-upcoming + li::before {
+        position: relative;
+        top: initial;
+        left: initial;
+        margin-bottom: 24px; }
       .timeline li::after {
         top: 2px;
-        left: -30.5px; } }
+        left: -31px; } }
 
 .page-artists > main {
   margin-bottom: 48px; }
