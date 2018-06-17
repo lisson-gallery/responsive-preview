@@ -41,7 +41,7 @@
   overflow: hidden; /* For IE */
   clear: both; /* For IE */
   display: grid;
-  grid-gap: $space-medium $space-small;
+  grid-gap: $space-medium $space-medium;
   grid-template-columns: repeat(5, 1fr);
   margin-bottom: $space-large;
 
@@ -82,7 +82,7 @@
   overflow: hidden; /* For IE */
   clear: both; /* For IE */
   display: grid;
-  grid-gap: $space-medium $space-small;
+  grid-gap: $space-large $space-medium;
   grid-template-columns: repeat(4, 1fr);
   margin-bottom: $space-large;
 
@@ -123,7 +123,7 @@
   overflow: hidden; /* For IE */
   clear: both; /* For IE */
   display: grid;
-  grid-gap: $space-medium $space-small;
+  grid-gap: $space-large $space-medium;
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: $space-large;
 
