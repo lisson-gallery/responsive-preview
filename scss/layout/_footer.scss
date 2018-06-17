@@ -4,7 +4,7 @@
 
 #footer {
   border-top: 1px solid $brand-color;
-  padding-top: $space-large;
+  padding-top: $space-medium;
   padding-bottom: $space-medium;
   margin-top: $space-large;
   display: grid;
@@ -17,7 +17,7 @@
   grid-row: 1;
   font-size: 14px;
   margin-top: $space-small;
-  margin-bottom: $space-large;
+  margin-bottom: $space-small;
   text-transform: uppercase;
 
   @media screen and (max-width: $breakpoint-small) {
