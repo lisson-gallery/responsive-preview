@@ -444,7 +444,7 @@ h1, h2, h3, h4, h5, h6,
 
 h2,
 .heading-2 {
-  font-size: 20px;
+  font-size: 26px;
   line-height: 1.2;
   margin-top: 0;
   margin-bottom: 24px; }
@@ -455,13 +455,9 @@ h2,
 
 h3,
 .heading-3 {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.2;
   margin-bottom: 12px; }
-  @media screen and (max-width: 375px) {
-    h3,
-    .heading-3 {
-      font-size: 20px; } }
 
 h4,
 .heading-4 {
@@ -593,9 +589,6 @@ p,
 /**
  * Add margins
  */
-.mt-0 {
-  margin-top: 0; }
-
 .mt-half {
   margin-top: .5rem; }
 
@@ -607,6 +600,9 @@ p,
 
 .mb-2 {
   margin-bottom: 2rem; }
+
+.ml-2 {
+  margin-left: 2rem; }
 
 /**
  * Remove underline on links
