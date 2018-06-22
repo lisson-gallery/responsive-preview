@@ -454,9 +454,10 @@
 .sp-arrow {
 	position: absolute;
 	display: block;
-	width: 20px;
+	width: 12px;
 	height: 30px;
 	cursor: pointer;
+	opacity: 0.5;
 }
 
 .sp-vertical .sp-arrow {
