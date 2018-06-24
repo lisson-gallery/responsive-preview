@@ -1507,9 +1507,6 @@ body {
   .page-shop > main a:visited {
     text-decoration: none; }
 
-.shop-wrapper {
-  max-width: 32rem; }
-
 .basket {
   padding-top: 3px; }
 
