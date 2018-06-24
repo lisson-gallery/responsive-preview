@@ -2,6 +2,73 @@
 // This file contains all styles related to the timeline component.
 // -----------------------------------------------------------------------------
 
+.timeline-hor {
+  padding-top: $space-medium;
+  padding-bottom: $space-medium;
+  margin-top: $space-large;
+  margin-bottom: 0;
+  border-top: 2px solid $dark-grey;
+  overflow: visible;
+
+  li {
+    position: relative;
+  }
+
+  li::after {
+    position: absolute;
+    top: -31px;
+    left: 0;
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: $dark-grey;
+    border-radius: 12px;
+  }
+
+  li::before {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    content: "Past";
+    font-family: $brand-font-stack;
+    text-transform: uppercase;
+    display: block;
+  }
+
+  .timeline-upcoming::before {
+    content: "Upcoming";
+  }
+
+  img {
+    width: 100%;
+  }
+
+  @media screen and (max-width: $breakpoint-medium) {
+    .timeline-upcoming + li::before {
+      position: relative;
+      top: initial;
+      left: initial;
+      margin-bottom: $space-medium;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-small) {
+    border-top: 0;
+    padding-top: 0;
+
+    li::after {
+      display: none;
+    }
+
+    li::before {
+      position: relative;
+      top: -1rem;
+    }
+  }
+
+}
+
 .timeline {
   padding-top: $space-medium;
   padding-bottom: $space-medium;
