@@ -15,7 +15,7 @@
 .footer-locations {
   grid-column: 1 / 2;
   grid-row: 1;
-  font-size: 14px;
+  font-size: .875rem;
   margin-top: $space-small;
   margin-bottom: $space-small;
   text-transform: uppercase;
@@ -72,7 +72,7 @@
 .footer-legal {
   grid-column: 1 / 3;
   grid-row: 2;
-  font-size: 12px;
+  font-size: .6875rem;
   line-height: 1.5;
 
   a:link,

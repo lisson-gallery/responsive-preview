@@ -11,8 +11,7 @@
   overflow: visible;
 
   li {
-    position: relative;
-  }
+    position: relative; }
 
   li::after {
     position: absolute;
@@ -23,8 +22,7 @@
     width: 12px;
     height: 12px;
     background: $dark-grey;
-    border-radius: 12px;
-  }
+    border-radius: 12px; }
 
   li::before {
     position: absolute;
@@ -33,38 +31,52 @@
     content: "Past";
     font-family: $brand-font-stack;
     text-transform: uppercase;
-    display: block;
-  }
+    display: block; }
 
   .timeline-upcoming::before {
-    content: "Upcoming";
-  }
+    content: "Upcoming"; }
 
   img {
-    width: 100%;
-  }
+    width: 100%; }
 
-  @media screen and (max-width: $breakpoint-medium) {
-    .timeline-upcoming + li::before {
+  @media screen and (max-width: $breakpoint-small) {
+    padding-left: $space-medium;
+    margin-top: 0;
+    border-top: 0;
+    border-left: 2px solid $dark-grey;
+    margin-left: $space-x-small;
+    grid-template-columns: 1fr; 
+
+    .tag {
+      margin-bottom: -1rem;
+
+      &::before,
+      &::after {
+        display: none; }
+    }
+
+    li + li {
+      margin-top: $space-medium; }
+
+    li:first-of-type:not(.timeline-upcoming)::before {
       position: relative;
       top: initial;
       left: initial;
-      margin-bottom: $space-medium;
-    }
-  }
+      margin-bottom: $space-small; }
 
-  @media screen and (max-width: $breakpoint-small) {
-    border-top: 0;
-    padding-top: 0;
+    .timeline-upcoming::before {
+      position: relative;
+      top: initial;
+      left: initial;
+      margin-bottom: $space-small; }
 
     li::after {
-      display: none;
-    }
+      top: 2px;
+      left: -31px; }
 
-    li::before {
-      position: relative;
-      top: -1rem;
-    }
+    img {
+      margin-top: $space-x-small;
+      margin-bottom: $space-x-small; }
   }
 
 }
@@ -83,13 +95,11 @@
 
     &::before,
     &::after {
-      display: none;
-    }
+      display: none; }
   }
 
   li {
-    position: relative;
-  }
+    position: relative; }
 
   li::after {
     position: absolute;
@@ -100,8 +110,7 @@
     width: 12px;
     height: 12px;
     background: $dark-grey;
-    border-radius: 12px;
-  }
+    border-radius: 12px; }
 
   .timeline-upcoming::before {
     position: absolute;
@@ -110,8 +119,7 @@
     content: "Upcoming";
     font-family: $brand-font-stack;
     text-transform: uppercase;
-    display: block;
-  }
+    display: block; }
 
   .timeline-upcoming + li::before {
     position: absolute;
@@ -120,8 +128,7 @@
     content: "Past";
     font-family: $brand-font-stack;
     text-transform: uppercase;
-    display: block;
-  }
+    display: block; }
 
   li:first-of-type:not(.timeline-upcoming)::before {
     position: absolute;
@@ -130,17 +137,14 @@
     content: "Past";
     font-family: $brand-font-stack;
     text-transform: uppercase;
-    display: block;
-  }
+    display: block; }
 
   li + li {
-    margin-top: $space-large;
-  }
+    margin-top: $space-large; }
 
   img {
     width: 18rem;
-    margin-top: $space-x-small;
-  }
+    margin-top: $space-x-small; }
 
   @media screen and (max-width: $breakpoint-medium) {
     margin-left: $space-x-small;
@@ -150,20 +154,17 @@
       position: relative;
       top: initial;
       left: initial;
-      margin-bottom: $space-medium;
-    }
+      margin-bottom: $space-medium; }
 
     .timeline-upcoming + li::before {
       position: relative;
       top: initial;
       left: initial;
-      margin-bottom: $space-medium;
-    }
+      margin-bottom: $space-medium; }
 
     li::after {
       top: 2px;
-      left: -31px;
-    }
+      left: -31px; }
   }
 
 }
