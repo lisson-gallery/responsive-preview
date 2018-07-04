@@ -601,28 +601,28 @@ p,
  * Add margins
  */
 .mt-half {
-  margin-top: .5rem; }
+  margin-top: .5rem !important; }
 
 .mt-1 {
-  margin-top: 1rem; }
+  margin-top: 1rem !important; }
 
 .mt-2 {
-  margin-top: 2rem; }
+  margin-top: 2rem !important; }
 
 .mb-half {
-  margin-bottom: .5rem; }
+  margin-bottom: .5rem !important; }
 
 .mb-1 {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem !important; }
 
 .mb-2 {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem !important; }
 
 .mb-3 {
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem !important; }
 
 .ml-2 {
-  margin-left: 2rem; }
+  margin-left: 2rem !important; }
 
 /**
  * Remove underline on links
@@ -834,6 +834,10 @@ body {
       body > aside, body > main {
         width: auto; } }
 
+.contained {
+  max-width: 45rem;
+  margin: auto; }
+
 #footer {
   border-top: 1px solid black;
   padding-top: 24px;
@@ -1029,7 +1033,7 @@ body {
  */
 .news-grid-item-title {
   margin-top: 0;
-  margin-bottom: 4px; }
+  margin-bottom: 12px; }
 
 /*
  * Borders
