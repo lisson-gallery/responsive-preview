@@ -10,3 +10,13 @@
     }
   }
 }
+
+.gallery-caption-positioned {
+  position: relative;
+
+  .carousel-grid-icon {
+    position: absolute;
+    right: 0;
+    top: -.5rem;
+  }
+}

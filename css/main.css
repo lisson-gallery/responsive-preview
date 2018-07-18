@@ -1541,6 +1541,13 @@ body {
 .page-exhibitions main a:visited {
   text-decoration: none; }
 
+.gallery-caption-positioned {
+  position: relative; }
+  .gallery-caption-positioned .carousel-grid-icon {
+    position: absolute;
+    right: 0;
+    top: -.5rem; }
+
 .page-news > main {
   margin-bottom: 48px; }
   .page-news > main a:link,
