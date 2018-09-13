@@ -1023,7 +1023,8 @@ body {
     text-align: center; }
     .masonry-grid .masonry-item img {
       width: 100%;
-      max-width: 100%; }
+      max-width: 100%;
+      height: 100%; }
   @media screen and (max-width: 768px) {
     .masonry-grid {
       -moz-column-count: 2;
