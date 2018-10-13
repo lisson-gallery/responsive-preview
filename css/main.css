@@ -1373,44 +1373,70 @@ body {
   right: 0; }
 
 .timeline-hor {
-  padding-top: 24px;
+  padding-top: 76px;
   padding-bottom: 24px;
-  margin-top: 48px;
+  margin-top: 0;
   margin-bottom: 0;
   border-top: 2px solid #444444;
-  overflow: visible; }
+  overflow: auto;
+  max-width: 100%;
+  flex-wrap: nowrap;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; }
   .timeline-hor li {
-    position: relative; }
+    position: relative;
+    margin-right: 24px;
+    flex: 0 0 18rem; }
   .timeline-hor li::after {
     position: absolute;
-    top: -31px;
+    top: -78px;
     left: 0;
     content: "";
     display: block;
-    width: 12px;
-    height: 12px;
-    background: #444444;
-    border-radius: 12px; }
-  .timeline-hor li::before {
+    width: 2px;
+    height: 14px;
+    background: #444444; }
+  .timeline-hor .timeline-past::before {
     position: absolute;
-    top: -60px;
+    top: -52px;
     left: 0;
     content: "Past";
     font-family: "GillSansWGL", "Gill Sans WGL Regular", "Gill Sans MT", "Gill Sans", GillSans, Calibri, sans-serif;
     text-transform: uppercase;
     display: block; }
+  .timeline-hor .timeline-current::before {
+    position: absolute;
+    top: -52px;
+    left: 0;
+    content: "Current";
+    font-family: "GillSansWGL", "Gill Sans WGL Regular", "Gill Sans MT", "Gill Sans", GillSans, Calibri, sans-serif;
+    text-transform: uppercase;
+    display: block; }
   .timeline-hor .timeline-upcoming::before {
-    content: "Upcoming"; }
+    position: absolute;
+    top: -52px;
+    left: 0;
+    content: "Upcoming";
+    font-family: "GillSansWGL", "Gill Sans WGL Regular", "Gill Sans MT", "Gill Sans", GillSans, Calibri, sans-serif;
+    text-transform: uppercase;
+    display: block; }
   .timeline-hor img {
     width: 100%; }
+  @media screen and (max-width: 768px) {
+    .timeline-hor li {
+      flex: 0 0 12rem; } }
   @media screen and (max-width: 640px) {
     .timeline-hor {
       padding-left: 24px;
+      padding-top: 0;
       margin-top: 0;
       border-top: 0;
       border-left: 2px solid #444444;
       margin-left: 4px;
-      grid-template-columns: 1fr; }
+      margin-bottom: 48px;
+      grid-template-columns: 1fr;
+      display: grid !important;
+      grid-gap: 48px 24px; }
       .timeline-hor .tag {
         margin-bottom: -1rem; }
         .timeline-hor .tag::before, .timeline-hor .tag::after {
@@ -1422,6 +1448,7 @@ body {
         top: initial;
         left: initial;
         margin-bottom: 12px; }
+      .timeline-hor .timeline-current::before,
       .timeline-hor .timeline-upcoming::before {
         position: relative;
         top: initial;

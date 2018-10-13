@@ -3,49 +3,78 @@
 // -----------------------------------------------------------------------------
 
 .timeline-hor {
-  padding-top: $space-medium;
+  padding-top: 76px;
   padding-bottom: $space-medium;
-  margin-top: $space-large;
+  margin-top: 0;
   margin-bottom: 0;
   border-top: 2px solid $dark-grey;
-  overflow: visible;
+  overflow: auto;
+  max-width: 100%;
+  flex-wrap: nowrap;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
 
   li {
-    position: relative; }
+    position: relative;
+    margin-right: $space-medium;
+    flex: 0 0 18rem; }
 
   li::after {
     position: absolute;
-    top: -31px;
+    top: -78px;
     left: 0;
     content: "";
     display: block;
-    width: 12px;
-    height: 12px;
-    background: $dark-grey;
-    border-radius: 12px; }
+    width: 2px;
+    height: 14px;
+    background: $dark-grey; }
 
-  li::before {
+  .timeline-past::before {
     position: absolute;
-    top: -60px;
+    top: -52px;
     left: 0;
     content: "Past";
     font-family: $brand-font-stack;
     text-transform: uppercase;
     display: block; }
 
+  .timeline-current::before {
+    position: absolute;
+    top: -52px;
+    left: 0;
+    content: "Current";
+    font-family: $brand-font-stack;
+    text-transform: uppercase;
+    display: block; }
+
   .timeline-upcoming::before {
-    content: "Upcoming"; }
+    position: absolute;
+    top: -52px;
+    left: 0;
+    content: "Upcoming";
+    font-family: $brand-font-stack;
+    text-transform: uppercase;
+    display: block; }
 
   img {
     width: 100%; }
 
+  @media screen and (max-width: $breakpoint-medium) {
+    li {
+      flex: 0 0 12rem; }
+  }
+
   @media screen and (max-width: $breakpoint-small) {
     padding-left: $space-medium;
+    padding-top: 0;
     margin-top: 0;
     border-top: 0;
     border-left: 2px solid $dark-grey;
     margin-left: $space-x-small;
-    grid-template-columns: 1fr; 
+    margin-bottom: $space-large;
+    grid-template-columns: 1fr;
+    display: grid !important;
+    grid-gap: $space-large $space-medium;
 
     .tag {
       margin-bottom: -1rem;
@@ -64,6 +93,7 @@
       left: initial;
       margin-bottom: $space-small; }
 
+    .timeline-current::before,
     .timeline-upcoming::before {
       position: relative;
       top: initial;
