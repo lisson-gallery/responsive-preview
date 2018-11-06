@@ -1455,8 +1455,10 @@ body {
         left: initial;
         margin-bottom: 12px; }
       .timeline-hor li::after {
-        top: 2px;
-        left: -31px; }
+        top: 0;
+        left: -26px;
+        width: 14px;
+        height: 2px; }
       .timeline-hor img {
         margin-top: 4px;
         margin-bottom: 4px; } }
