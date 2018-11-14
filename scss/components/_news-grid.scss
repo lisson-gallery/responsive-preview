@@ -185,9 +185,9 @@
 
   img {
     width: 32%; /* For IE */
-    float: left; /* For IE */
+    float: right; /* For IE */
     margin-right: 1%; /* For IE */
-    grid-column: 1 / 2;
+    grid-column: 2 / 4;
 
     @supports (display:grid) { /* To cancel IE rules */
       width: 100%;
@@ -199,7 +199,7 @@
   div {
     width: 66%; /* For IE */
     float: left; /* For IE */
-    grid-column: 2 / 4;
+    grid-column: 1 / 2;
 
     @supports (display:grid) { /* To cancel IE rules */
       width: auto;
