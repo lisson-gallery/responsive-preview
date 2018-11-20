@@ -1575,6 +1575,13 @@ body {
   .artists-list a:visited {
     text-decoration: none; }
 
+@media screen and (max-width: 768px) {
+  .artist-content-area {
+    grid-column: 1 / span 2;
+    grid-row: third-line / 4; }
+
+  .artist-image-area {
+    grid-column: 1 / span 2; } }
 .carousel-grid-icon span {
   align-self: center;
   margin-left: .5rem; }

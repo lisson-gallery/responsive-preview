@@ -39,6 +39,17 @@
   }
 }
 
+@media screen and (max-width: $breakpoint-medium) {
+  .artist-content-area {
+    grid-column: 1 / span 2;
+    grid-row: third-line / 4;
+  }
+  .artist-image-area {
+    grid-column: 1 / span 2;
+  }
+}
+
+
 .carousel-grid-icon {
   span {
     align-self: center;
