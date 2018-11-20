@@ -505,7 +505,7 @@
 	position: absolute;
 	width: 50%;
 	height: 50%;
-	background-color: #FFF;
+	background-color: rgba(0,0,0,.6);
 }
 
 .sp-arrow:before {
