@@ -1185,7 +1185,8 @@ body {
   margin-bottom: 48px; }
   @media screen and (max-width: 640px) {
     .news-grid-3up {
-      grid-template-columns: repeat(4, 1fr); } }
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 24px 24px; } }
 
 .news-grid-3up-feature {
   grid-column: span 3; }
@@ -1547,9 +1548,6 @@ body {
       .timeline li::after {
         top: 2px;
         left: -31px; } }
-
-.slider-home {
-  height: 4.5rem; }
 
 .page-artists > main {
   margin-bottom: 48px; }

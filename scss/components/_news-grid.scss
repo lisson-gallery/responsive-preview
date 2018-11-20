@@ -129,6 +129,7 @@
 
   @media screen and (max-width: $breakpoint-small) {
     grid-template-columns: repeat(4, 1fr);
+    grid-gap: $space-medium $space-medium;
   }
 }
 
