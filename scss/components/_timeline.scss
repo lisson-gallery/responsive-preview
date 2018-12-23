@@ -2,6 +2,9 @@
 // This file contains all styles related to the timeline component.
 // -----------------------------------------------------------------------------
 
+.timeline-container {
+  position: relative; }
+
 .timeline-hor {
   padding-top: 76px;
   padding-bottom: $space-medium;
@@ -29,6 +32,9 @@
     height: 14px;
     background: $dark-grey; }
 
+  li:last-of-type {
+    margin-right: 80px; }
+
   .timeline-past::before {
     position: absolute;
     top: -52px;
@@ -52,6 +58,14 @@
     top: -52px;
     left: 0;
     content: "Upcoming";
+    font-family: $brand-font-stack;
+    text-transform: uppercase;
+    display: block; }
+
+  .timeline-year {
+    position: absolute;
+    top: -52px;
+    left: 0;
     font-family: $brand-font-stack;
     text-transform: uppercase;
     display: block; }
@@ -112,92 +126,3 @@
   }
 
 }
-
-.timeline {
-  padding-top: $space-medium;
-  padding-bottom: $space-medium;
-  padding-left: $space-large;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 128px;
-  border-left: 2px solid $dark-grey;
-
-  .tag {
-    margin-bottom: -1rem;
-
-    &::before,
-    &::after {
-      display: none; }
-  }
-
-  li {
-    position: relative; }
-
-  li::after {
-    position: absolute;
-    top: 4px;
-    left: -55px;
-    content: "";
-    display: block;
-    width: 12px;
-    height: 12px;
-    background: $dark-grey;
-    border-radius: 12px; }
-
-  .timeline-upcoming::before {
-    position: absolute;
-    top: 2px;
-    left: -11rem;
-    content: "Upcoming";
-    font-family: $brand-font-stack;
-    text-transform: uppercase;
-    display: block; }
-
-  .timeline-upcoming + li::before {
-    position: absolute;
-    top: 2px;
-    left: -8rem;
-    content: "Past";
-    font-family: $brand-font-stack;
-    text-transform: uppercase;
-    display: block; }
-
-  li:first-of-type:not(.timeline-upcoming)::before {
-    position: absolute;
-    top: 2px;
-    left: -8rem;
-    content: "Past";
-    font-family: $brand-font-stack;
-    text-transform: uppercase;
-    display: block; }
-
-  li + li {
-    margin-top: $space-large; }
-
-  img {
-    width: 18rem;
-    margin-top: $space-x-small; }
-
-  @media screen and (max-width: $breakpoint-medium) {
-    margin-left: $space-x-small;
-    padding-left: $space-medium;
-
-    .timeline-upcoming::before {
-      position: relative;
-      top: initial;
-      left: initial;
-      margin-bottom: $space-medium; }
-
-    .timeline-upcoming + li::before {
-      position: relative;
-      top: initial;
-      left: initial;
-      margin-bottom: $space-medium; }
-
-    li::after {
-      top: 2px;
-      left: -31px; }
-  }
-
-}
-
