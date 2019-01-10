@@ -1475,10 +1475,12 @@ body {
         top: initial;
         left: initial;
         margin-bottom: 12px; }
+      .timeline-hor .timeline-year,
+      .timeline-hor .timeline-past::before,
       .timeline-hor .timeline-current::before,
       .timeline-hor .timeline-upcoming::before {
         position: relative;
-        top: initial;
+        top: -2px;
         left: initial;
         margin-bottom: 12px; }
       .timeline-hor li::after {

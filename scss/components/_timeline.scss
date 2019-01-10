@@ -107,10 +107,12 @@
       left: initial;
       margin-bottom: $space-small; }
 
+    .timeline-year,
+    .timeline-past::before,
     .timeline-current::before,
     .timeline-upcoming::before {
       position: relative;
-      top: initial;
+      top: -2px;
       left: initial;
       margin-bottom: $space-small; }
 
