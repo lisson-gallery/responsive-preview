@@ -1490,7 +1490,7 @@ body {
         width: 14px;
         height: 2px; }
       .timeline-hor img {
-        margin-top: 4px;
+        margin-top: 0;
         margin-bottom: 4px; } }
 
 .page-artists > main {
