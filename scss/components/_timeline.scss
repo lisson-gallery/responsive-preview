@@ -89,6 +89,7 @@
     grid-template-columns: 1fr;
     display: grid !important;
     grid-gap: $space-large $space-medium;
+    overflow: visible;
 
     .tag {
       margin-bottom: -1rem;
@@ -112,9 +113,9 @@
     .timeline-current::before,
     .timeline-upcoming::before {
       position: relative;
-      top: -2px;
+      top: -8px;
       left: initial;
-      margin-bottom: $space-small; }
+      margin-bottom: 8px; }
 
     li::after {
       top: 0;
@@ -123,7 +124,7 @@
       height: 2px; }
 
     img {
-      margin-top: $space-x-small;
+      margin-top: 0;
       margin-bottom: $space-x-small; }
   }
 
