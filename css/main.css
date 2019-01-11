@@ -1481,7 +1481,7 @@ body {
       .timeline-hor .timeline-current::before,
       .timeline-hor .timeline-upcoming::before {
         position: relative;
-        top: -2px;
+        top: -8px;
         left: initial;
         margin-bottom: 12px; }
       .timeline-hor li::after {
