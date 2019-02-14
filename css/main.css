@@ -563,6 +563,9 @@ p,
 .d-flex {
   display: flex !important; }
 
+.d-column {
+  flex-flow: column; }
+
 /**
  * Container widths
  */
