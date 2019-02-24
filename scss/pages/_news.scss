@@ -9,3 +9,13 @@
   a:visited {
     text-decoration: none; }
 }
+
+.news-content-area {
+  padding-right: 2rem;
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+  .news-content-area {
+    padding-right: 0;
+  }
+}

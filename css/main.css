@@ -1522,10 +1522,14 @@ body {
   .artists-list a:visited {
     text-decoration: none; }
 
+.artist-content-area {
+  padding-right: 2rem; }
+
 @media screen and (max-width: 768px) {
   .artist-content-area {
     grid-column: 1 / span 2;
-    grid-row: third-line / 4; }
+    grid-row: third-line / 4;
+    padding-right: 0; }
 
   .artist-image-area {
     grid-column: 1 / span 2; } }
@@ -1550,6 +1554,12 @@ body {
   .page-news > main a:visited {
     text-decoration: none; }
 
+.news-content-area {
+  padding-right: 2rem; }
+
+@media screen and (max-width: 768px) {
+  .news-content-area {
+    padding-right: 0; } }
 .page-shop > main {
   margin-bottom: 48px; }
   .page-shop > main a:link,

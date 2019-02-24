@@ -39,10 +39,15 @@
   }
 }
 
+.artist-content-area {
+  padding-right: 2rem;
+}
+
 @media screen and (max-width: $breakpoint-medium) {
   .artist-content-area {
     grid-column: 1 / span 2;
     grid-row: third-line / 4;
+    padding-right: 0;
   }
   .artist-image-area {
     grid-column: 1 / span 2;
