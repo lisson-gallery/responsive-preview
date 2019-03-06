@@ -55,7 +55,7 @@
 }
 
 /**
- * Display modes 
+ * Display modes
  */
 
 .d-block {
@@ -178,4 +178,15 @@
   &:active,
   &:focus {
     text-decoration: underline; }
+}
+
+/**
+ * Text
+ */
+
+.break-word {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+  word-break: break-word;
 }

@@ -555,7 +555,7 @@ p,
       display: none; } }
 
 /**
- * Display modes 
+ * Display modes
  */
 .d-block {
   display: block !important; }
@@ -659,6 +659,15 @@ p,
   text-decoration: underline !important; }
   .link-visible:hover, .link-visible:active, .link-visible:focus {
     text-decoration: underline; }
+
+/**
+ * Text
+ */
+.break-word {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+  word-break: break-word; }
 
 #brand-link {
   padding: 24px 0;
