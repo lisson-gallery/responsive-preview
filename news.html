@@ -42,7 +42,19 @@
 
       <main>
 
-        <h2>News</h2>
+        <div class="news-header d-flex space-between flex-start">
+          <h2>News</h2>
+
+          <div class="select-news relative font-brand">
+            <select id="news-filter" class="input input-narrow select font-brand">
+                <option value="">Filter news</option>
+                <option value="news">News</option>
+                <option value="video">Video</option>
+                <option value="artfair">Art Fair</option>
+              </select>
+          </div>
+          
+        </div>        
 
         <div class="news-grid-3up">
 
