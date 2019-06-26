@@ -1558,6 +1558,49 @@ body {
   align-self: center;
   margin-left: .5rem; }
 
+.grid-grid {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start; }
+  .grid-grid .grid-grid-item {
+    display: flex;
+    flex: 0 0 24%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 1px solid #c8c8c8;
+    margin: 4px;
+    height: 200px; }
+    .grid-grid .grid-grid-item a {
+      text-align: center; }
+    .grid-grid .grid-grid-item img {
+      max-width: 90%;
+      max-height: 180px; }
+  @media screen and (max-width: 1024px) {
+    .grid-grid .grid-grid-item {
+      flex: 0 0 32%;
+      height: 220px; }
+      .grid-grid .grid-grid-item img {
+        max-height: 200px; } }
+  @media screen and (max-width: 768px) {
+    .grid-grid .grid-grid-item {
+      height: 160px; }
+      .grid-grid .grid-grid-item img {
+        max-height: 140px; } }
+  @media screen and (max-width: 640px) {
+    .grid-grid .grid-grid-item {
+      flex: 0 0 47%;
+      height: 140px; }
+      .grid-grid .grid-grid-item img {
+        max-height: 120px; } }
+  @media screen and (max-width: 375px) {
+    .grid-grid .grid-grid-item {
+      flex: 0 0 100%;
+      height: 200px; }
+      .grid-grid .grid-grid-item img {
+        max-height: 180px; } }
+
 .page-exhibitions main a:link,
 .page-exhibitions main a:visited {
   text-decoration: none; }
