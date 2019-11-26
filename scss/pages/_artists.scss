@@ -54,79 +54,10 @@
   }
 }
 
+
 .carousel-grid-icon {
   span {
     align-self: center;
     margin-left: .5rem;
-  }
-}
-
-.grid-grid {
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-content: flex-start;
-
-  .grid-grid-item {
-    display: flex;
-    flex: 0 0 24%;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    border: 1px solid #c8c8c8;
-    margin: $space-x-small;
-    height: 200px;
-
-    a {
-      text-align: center;
-    }
-
-    img {
-      max-width: 90%;
-      max-height: 180px;
-    }
-  }
-
-  @media screen and (max-width: $breakpoint-large) {
-    .grid-grid-item {
-      flex: 0 0 32%;
-      height: 220px;
-
-      img {
-        max-height: 200px;
-      }
-    }
-  }
-
-  @media screen and (max-width: $breakpoint-medium) {
-    .grid-grid-item {
-      height: 160px;
-
-      img {
-        max-height: 140px;
-      }
-    }
-  }
-
-  @media screen and (max-width: $breakpoint-small) {
-    .grid-grid-item {
-      flex: 0 0 47%;
-      height: 140px;
-
-      img {
-        max-height: 120px;
-      }
-    }
-  }
-
-  @media screen and (max-width: $breakpoint-tiny) {
-    .grid-grid-item {
-      flex: 0 0 100%;
-      height: 200px;
-
-      img {
-        max-height: 180px;
-      }
-    }
   }
 }
