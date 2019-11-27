@@ -582,6 +582,9 @@ p,
   width: 100%;
   max-width: 100%; }
 
+.max-width {
+  max-width: 100%; }
+
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -632,6 +635,9 @@ p,
 /**
  * Add margins
  */
+.m-auto {
+  margin: auto; }
+
 .mt-half {
   margin-top: .5rem !important; }
 
@@ -1557,6 +1563,66 @@ body {
 .carousel-grid-icon span {
   align-self: center;
   margin-left: .5rem; }
+
+.thumb-arrows {
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1; }
+
+.thumb-arrow {
+  position: absolute;
+  /*top: 50%;
+  margin-top: -15px;*/
+  display: block;
+  width: 50%;
+  height: 100%;
+  opacity: 0.5; }
+
+.thumb-arrow::before,
+.thumb-arrow::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.6); }
+
+.thumb-arrow::before {
+  left: 0;
+  top: 50%;
+  margin-top: -30px;
+  -webkit-transform: skew(145deg, 0deg);
+  -ms-transform: skew(145deg, 0deg);
+  transform: skew(145deg, 0deg); }
+
+.thumb-arrow::after {
+  left: 0;
+  top: 50%;
+  margin-top: 0px;
+  -webkit-transform: skew(-145deg, 0deg);
+  -ms-transform: skew(-145deg, 0deg);
+  transform: skew(-145deg, 0deg); }
+
+.thumb-arrow-prev {
+  left: 20px;
+  right: auto; }
+
+.thumb-arrow-next {
+  right: 20px;
+  left: auto;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.thumb-arrow-link {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0; }
 
 .page-exhibitions main a:link,
 .page-exhibitions main a:visited {
