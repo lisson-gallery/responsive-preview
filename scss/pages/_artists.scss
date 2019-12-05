@@ -59,6 +59,9 @@
 
 .page-artist-thumb {}
 
+.thumb-image {
+  max-height: 85vh; }
+
 .thumb-arrows {
   width: 100%;
   left: 0;
@@ -79,13 +82,13 @@
 .thumb-arrow::after {
   content: '';
   position: absolute;
-  width: 12px;
-  height: 30px;
+  width: 6px;
+  height: 15px;
   background-color: rgba(0,0,0,0.6); }
 .thumb-arrow::before {
   left: 0;
   top: 50%;
-  margin-top: -30px;
+  margin-top: -15px;
   -webkit-transform: skew(145deg, 0deg);
   -ms-transform: skew(145deg, 0deg);
   transform: skew(145deg, 0deg); }
@@ -111,3 +114,26 @@
   position: absolute;
   top: 0;
   bottom: 0; }
+
+.thumb-close {
+  width: 30px;
+  height: 30px;
+  z-index: 2;
+  position: absolute;
+  right: 12px;
+  top: 0;
+  display: block; }
+.thumb-close::after {
+  content: '';
+  height: 30px;
+  border-left: 4px solid #b3b3b3;
+  position: absolute;
+  transform: rotate(45deg);
+  left: 14px; }
+.thumb-close::before {
+  content: '';
+  height: 30px;
+  border-left: 4px solid #b3b3b3;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 14px; }
