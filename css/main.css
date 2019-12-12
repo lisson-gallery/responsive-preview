@@ -566,6 +566,9 @@ p,
 .d-column {
   flex-flow: column; }
 
+.d-none {
+  display: none !important; }
+
 /**
  * Flex helpers
  */
@@ -1565,7 +1568,7 @@ body {
   margin-left: .5rem; }
 
 .thumb-image {
-  max-height: 85vh; }
+  height: 75vh; }
 
 .thumb-arrows {
   width: 100%;
