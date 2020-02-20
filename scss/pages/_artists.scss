@@ -60,7 +60,10 @@
 .page-artist-thumb {}
 
 .thumb-image {
-  height: 75vh; }
+  height: 75vh; 
+  @media screen and (max-width: $breakpoint-medium) {
+    height: auto; }
+}
 
 .thumb-arrows {
   width: 100%;
@@ -72,8 +75,6 @@
   z-index: 1; }
 .thumb-arrow {
   position: absolute;
-  /*top: 50%;
-  margin-top: -15px;*/
   display: block;
   width: /*12px*/50%;
   height: /*30px*/100%;
