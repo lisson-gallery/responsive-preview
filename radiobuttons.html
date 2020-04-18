@@ -1,0 +1,160 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Radio buttons</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+
+
+        <link rel="stylesheet" href="css/main.css">
+
+        <style>
+          .lisson-radios__item {
+            display: block;
+            position: relative;
+            min-height: 32px;
+            margin-bottom: 10px;
+            padding-left: 32px;
+            clear: left;
+          }
+          .lisson-radios__input {
+            cursor: pointer;
+            position: absolute;
+            z-index: 1;
+            top: -2px;
+            left: -2px;
+            width: 36px;
+            height: 36px;
+            margin: 0;
+            opacity: 0;
+          }
+          .lisson-radios__label {
+            display: inline-block;
+            margin-bottom: 0;
+            padding: 9px 12px;
+            cursor: pointer;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+          }
+          .lisson-radios__label::before {
+            content: "";
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 36px;
+            height: 36px;
+            border: 1px solid currentColor;
+            border-radius: 50%;
+            background: transparent;
+          }
+          .lisson-radios__label::after {
+            content: "";
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            width: 0;
+            height: 0;
+            border: 10px solid currentColor;
+            border-radius: 50%;
+            opacity: 0;
+            background: currentColor;
+          }
+          .lisson-radios__input:checked+.lisson-radios__label::after {
+            opacity: 1;
+          }
+
+        </style>
+    </head>
+    <body class="page-bio">
+
+      <header>
+        <a id="brand-link" class="hide-text" href="index.html">
+          <img src="assets/lisson-gallery-logo.svg" alt="Lisson Gallery" />
+        </a>
+      </header>
+
+      <aside>
+        <nav>
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+          <ul id="nav" class="menu font-brand no-bullets no-margin">
+            <!--<li><a href="index.html">Home</a></li> #NAVUPDATE -->
+            <li><a href="artists.html">Artists</a></li>
+            <li><a href="exhibitions.html">Exhibitions</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="art-fairs.html">Art Fairs</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a class="nav-current" href="contact.html">Contact</a></li>
+            <li><a href="subscribe.html">Subscribe</a></li>
+          </ul>
+        </nav>
+
+      </aside>
+
+      <main>
+
+        <h1>Form</h1>
+
+        <div>
+          <div class="font-brand">
+            <p>How would you like to be contacted?</p>
+            <div class="lisson-radios__item">
+              <input class="lisson-radios__input" id="contact-email" name="contact-format" type="radio" value="yes">
+              <label class="lisson-label lisson-radios__label" for="contact-email">
+                Email
+              </label>
+            </div>
+            <div class="lisson-radios__item">
+              <input class="lisson-radios__input" id="contact-phone" name="contact-format" type="radio" value="no">
+              <label class="lisson-label lisson-radios__label" for="contact-phone">
+                Phone
+              </label>
+            </div>
+            <div class="lisson-radios__item">
+              <input class="lisson-radios__input" id="contact-wechat" name="contact-format" type="radio" value="no">
+              <label class="lisson-label lisson-radios__label" for="contact-wechat">
+                WeChat
+              </label>
+            </div>
+          </div>
+          
+        </div>
+
+      </main>
+
+      <footer id="footer">
+        <div class="footer-locations font-brand space-bottom-l">
+          London | New York
+        </div>
+
+        <ul class="footer-social font-brand no-bullets inline-list no-margin">
+          <li><a class="hide-text icon-twitter" href="#">Twitter</a></li>
+          <li><a class="hide-text icon-facebook" href="#">Facebook</a></li>
+          <li><a class="hide-text icon-youtube" href="#">YouTube</a></li>
+          <li><a class="hide-text icon-instagram" href="#">Instagram</a></li>
+          <li><a class="hide-text icon-wechat" href="#">Wechat</a></li>
+          <li><a class="hide-text icon-soundcloud" href="#">Soundcloud</a></li>
+        </ul>
+
+        <p class="footer-legal font-brand">
+          Lisson Gallery London Limited | Incorporated in England & Wales Company Number 1691363 | 52-54 Bell Street, London, NW1 5DA
+          <br />
+          <a href="#">Privacy Policy</a>
+        </p>
+      </footer>
+
+      <!--<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+      <script src="js/plugins.js"></script>
+      <script src="js/main.js"></script>-->
+    </body>
+</html>
