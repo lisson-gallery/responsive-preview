@@ -23,37 +23,37 @@
         <link rel="stylesheet" href="plugins/slider-pro/dist/css/slider-pro.min.css"/>
 
         <style>
-          .lisson-heading {
+          .studio-lisson-heading {
             font-size:40px; 
             letter-spacing:8px; 
             margin-bottom: -1.5rem;
           }
           @media screen and (max-width: 640px) {
-            .lisson-heading {
+            .studio-lisson-heading {
               font-size: 32px;
               letter-spacing: 6px;
             }
           }
           @media screen and (max-width: 375px) {
-            .lisson-heading {
+            .studio-lisson-heading {
               font-size: 24px;
               letter-spacing: 4px;
             }
           }
 
-          .studio-heading {
+          .studio-studio-heading {
             font-size:120px; 
             letter-spacing:12px;
           }
           @media screen and (max-width: 640px) {
-            .studio-heading {
+            .studio-studio-heading {
               font-size: 80px;
               letter-spacing: 8px;
             }
           }
 
           @media screen and (max-width: 375px) {
-            .studio-heading {
+            .studio-studio-heading {
               font-size: 64px;
               letter-spacing: 4px;
             }
@@ -76,6 +76,23 @@
           a.hayden:hover {
             background-image: url(assets/studio/hayden/hayden-hover.jpg) !important;
           }
+
+          .show-small {
+            display: none;
+          }
+          @media screen and (max-width: 640px) {
+            .hide-small {
+              display: none;
+            }
+            .show-small {
+              display: block;
+            }
+            .studio-landing-image {
+              background: none !important;
+              min-height: auto !important;
+            }
+          }
+          
         </style>
     </head>
     <body class="page-home">
@@ -109,16 +126,16 @@
 
         <div class="news-grid-2up text-center">
 
-          <h1 class="span-2 text-uppercase lisson-heading">Lisson</h1>
-          <h1 class="span-2 mt-0 mb-0 text-uppercase studio-heading">Studio</h1>
+          <h1 class="span-2 text-uppercase studio-lisson-heading"><a class="link-discreet" href="https://www.lissongallery.com/">Lisson</a></h1>
+          <h1 class="span-2 mt-0 mb-0 text-uppercase studio-studio-heading">Studio</h1>
         
         </div>
 
         <!-- START row -->
         <div class="news-grid-2up">
 
-          <div class="news-grid-2up-item">
-            <h2 class="heading-4 mt-0"><a href="studio-gander.html" class="link-discreet">In the studio with Ryan Gander</a></h2>
+          <div class="news-grid-2up-item hide-small">
+            <h2 class="heading-3 mt-0"><a href="studio-gander.html" class="link-discreet">In the studio with Ryan Gander</a></h2>
             <p class="no-margin">Please join Ryan Gander for a virtual walk-through of his studio, featuring
               new works including a philosophically grumpy mouse, ghostly apparitions,
               fake snow drifts, a man crafted from graphite and more. Tem id moles
@@ -137,13 +154,14 @@
           </div>
 
           <div class="news-grid-2up-item">
-            <a href="studio-gander.html" class="d-block gander" 
+            <a href="studio-gander.html" class="d-block gander studio-landing-image" 
               style="background-image:url(assets/studio/gander/gander-link.jpg); 
               background-repeat: no-repeat;
               background-position: center;
               background-size:cover; 
               min-height:400px;"
             >
+              <img class="max-width show-small" src="assets/studio/gander/gander-link.jpg" >
             </a>
           </div>
 
@@ -153,9 +171,9 @@
         <!-- START row -->
         <div class="news-grid-2up">
 
-          <div class="news-grid-2up-item">
-            <h2 class="heading-4 mt-0"><a href="#" class="link-discreet">In the studio with Carmen Herrera</a></h2>
-            <p class="no-margin">Please join Ryan Gander for a virtual walk-through of his studio, featuring
+          <div class="news-grid-2up-item hide-small">
+            <h2 class="heading-3 mt-0"><a href="#" class="link-discreet">In the studio with Carmen Herrera</a></h2>
+            <p class="no-margin hide-small">Please join Ryan Gander for a virtual walk-through of his studio, featuring
               new works including a philosophically grumpy mouse, ghostly apparitions,
               fake snow drifts, a man crafted from graphite and more. Tem id moles
               consed que sita ipidunt uribeatem voluptas et, is quas quiditium et autem adigent, quidusdam qui inullor eratur sedi te commo erovid quo et ium est etur?
@@ -172,13 +190,14 @@
           </div>
 
           <div class="news-grid-2up-item">
-            <a href="#" class="d-block herrera" 
+            <a href="#" class="d-block herrera studio-landing-image" 
               style="background-image:url(assets/studio/herrera/herrera-link.jpg); 
               background-repeat: no-repeat;
               background-position: center;
               background-size:cover; 
               min-height:400px;"
             >
+              <img class="max-width show-small" src="assets/studio/herrera/herrera-link.jpg" >
             </a>
           </div>
 
@@ -188,8 +207,8 @@
         <!-- START row -->
         <div class="news-grid-2up">
 
-          <div class="news-grid-2up-item">
-            <h2 class="heading-4 mt-0"><a href="#" class="link-discreet">In the studio with Stanley Whitney</a></h2>
+          <div class="news-grid-2up-item hide-small">
+            <h2 class="heading-3 mt-0"><a href="#" class="link-discreet">In the studio with Stanley Whitney</a></h2>
             <p class="no-margin">Please join Ryan Gander for a virtual walk-through of his studio, featuring
               new works including a philosophically grumpy mouse, ghostly apparitions,
               fake snow drifts, a man crafted from graphite and more. Tem id moles
@@ -208,13 +227,14 @@
           </div>
 
           <div class="news-grid-2up-item">
-            <a href="#" class="d-block whitney" 
+            <a href="#" class="d-block whitney studio-landing-image" 
               style="background-image:url(assets/studio/whitney/whitney-link.jpg); 
               background-repeat: no-repeat;
               background-position: center;
               background-size:cover; 
               min-height:400px;"
             >
+             <img class="max-width show-small" src="assets/studio/whitney/whitney-link.jpg" >
             </a>
           </div>
 
@@ -224,8 +244,8 @@
         <!-- START row -->
         <div class="news-grid-2up">
 
-          <div class="news-grid-2up-item">
-            <h2 class="heading-4 mt-0"><a href="#" class="link-discreet">In the studio with Hugh Hayden</a></h2>
+          <div class="news-grid-2up-item hide-small">
+            <h2 class="heading-3 mt-0"><a href="#" class="link-discreet">In the studio with Hugh Hayden</a></h2>
             <p class="no-margin">Please join Ryan Gander for a virtual walk-through of his studio, featuring
               new works including a philosophically grumpy mouse, ghostly apparitions,
               fake snow drifts, a man crafted from graphite and more. Tem id moles
@@ -244,18 +264,21 @@
           </div>
 
           <div class="news-grid-2up-item">
-            <a href="#" class="d-block hayden" 
+            <a href="#" class="d-block hayden studio-landing-image" 
               style="background-image:url(assets/studio/hayden/hayden-link.jpg); 
               background-repeat: no-repeat;
               background-position: center;
               background-size:cover; 
               min-height:400px;"
-            >
+            > 
+            <img class="max-width show-small" src="assets/studio/hayden/hayden-link.jpg" >
             </a>
           </div>
 
         </div>   
         <!-- END row -->  
+
+        <p class="font-brand mb-0"><a href="#">Back to lissongallery.com</a></p>
 
       </main>
 

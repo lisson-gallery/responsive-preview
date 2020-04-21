@@ -23,17 +23,55 @@
         <link rel="stylesheet" href="plugins/slider-pro/dist/css/slider-pro.min.css"/>
 
         <style>
-          a.gander:hover {
-            background-image: url(assets/studio/gander/gander-hover.jpg) !important;
+          .studio-lisson-heading {
+            font-size:40px; 
+            letter-spacing:8px; 
+            margin-bottom: -1.5rem;
           }
-          a.herrera:hover {
-            background-image: url(assets/studio/herrera/herrera-hover.jpg) !important;
+          @media screen and (max-width: 640px) {
+            .studio-lisson-heading {
+              font-size: 32px;
+              letter-spacing: 6px;
+            }
           }
-          a.whitney:hover {
-            background-image: url(assets/studio/whitney/whitney-hover.jpg) !important;
+          @media screen and (max-width: 375px) {
+            .studio-lisson-heading {
+              font-size: 24px;
+              letter-spacing: 4px;
+            }
           }
-          a.hayden:hover {
-            background-image: url(assets/studio/hayden/hayden-hover.jpg) !important;
+
+          .studio-studio-heading {
+            font-size:120px; 
+            letter-spacing:12px;
+          }
+          @media screen and (max-width: 640px) {
+            .studio-studio-heading {
+              font-size: 80px;
+              letter-spacing: 8px;
+            }
+          }
+
+          @media screen and (max-width: 375px) {
+            .studio-studio-heading {
+              font-size: 64px;
+              letter-spacing: 4px;
+            }
+          }
+
+          .studio-artist-heading {
+            font-size:40px; 
+          }
+          @media screen and (max-width: 640px) {
+            .studio-artist-heading {
+              font-size: 32px;
+            }
+          }
+
+          @media screen and (max-width: 375px) {
+            .studio-artist-heading {
+              font-size: 24px;
+            }
           }
         </style>
     </head>
@@ -68,11 +106,11 @@
 
         <div class="news-grid-2up text-center">
           
-            <h1 class="span-2 text-uppercase" style="font-size:40px; letter-spacing:8px; margin-bottom: -1.5rem;"><a href="studio.html" class="link-discreet">Lisson</a></h1>
-            <h1 class="span-2 mt-0 mb-0 text-uppercase" style="font-size:120px; letter-spacing:12px;"><a href="studio.html" class="link-discreet">Studio</a></h1>
+            <h1 class="span-2 text-uppercase studio-lisson-heading"><a href="https://www.lissongallery.com/" class="link-discreet">Lisson</a></h1>
+            <h1 class="span-2 mt-0 mb-0 text-uppercase studio-studio-heading"><a href="studio.html" class="link-discreet">Studio</a></h1>
           </a>
 
-          <h2 class="span-2 text-center mb-0" style="font-size:40px;">Ryan Gander</h2>
+          <h2 class="span-2 text-center mb-0 studio-artist-heading">Ryan Gander</h2>
         
         </div>
 
@@ -81,7 +119,7 @@
         </div>
 
         <div class="contained mb-2">
-          <h2 class="heading-4">In the studio with Ryan Gander</h2>
+          <h2 class="heading-3">In the studio with Ryan Gander</h2>
           <p class="no-margin">Please join Ryan Gander for a virtual walk-through of his studio, featuring
               new works including a philosophically grumpy mouse, ghostly apparitions,
               fake snow drifts, a man crafted from graphite and more. Tem id moles
