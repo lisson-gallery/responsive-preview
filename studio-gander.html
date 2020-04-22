@@ -73,6 +73,30 @@
               font-size: 24px;
             }
           }
+          .studio-pdf-link {
+            position: relative;
+          }
+          .studio-pdf-link>img{
+            vertical-align: middle;
+          }
+          .studio-pdf-link::before {
+            transition: opacity 0.8s ease;
+            opacity: 0;
+          }
+          .studio-pdf-link:hover::before {
+            display: flex;
+            opacity: 1;
+            content: "Download PDF";
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 3em;
+            color: #fff;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,.5);
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+          }
         </style>
     </head>
     <body class="page-home">
@@ -139,6 +163,55 @@
 
         <div class="contained">
           <img class="max-width" src="assets/studio/gander/gander-2.jpg">
+
+          <p class="font-brand">
+            Ryan Gander<br>
+            <em>Bit Part Player (Balthazar, Merchant of Venice; Act 3, Scene 4)</em>, 2020<br>
+            Graphite, fibreglass, resin, cotton t-shirt and joggers 183 x 65 x 47 cm 72 x 25 1/2 x 18 1/2 in
+          </p>
+        </div>
+
+        <div class="slider-pro contained space-top-l space-bottom-m" id="slider-artist">
+          <div class="sp-slides slider-image row-relative">
+            <!-- Slide 1 -->
+            <div class="sp-slide">
+              <img class="sp-image" src="assets/blank.gif"
+                data-src="assets/artist/artist-1@2x-50.jpg" />
+              <p class="sp-caption font-brand">
+                Marina Abramović<br />
+                <span class="emphasis">In The Sea of Silence</span>, 2013<br />
+                Fine art pigment print<br />
+                160 x 213 cm<br />
+                63 x 83 7/8 in
+              </p>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="sp-slide">
+              <img class="sp-image" src="assets/blank.gif"
+                data-src="assets/artist/artist-2@2x-50.jpg" />
+              <p class="sp-caption font-brand">
+                Marina Abramović<br />
+                <span class="emphasis">Looking at the Mountains</span>, 2010<br />
+                Colour pigment print<br />
+                160 x 200 cm<br />
+                63 x 78 3/4 in<br />
+              </p>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="sp-slide">
+              <img class="sp-image" src="assets/blank.gif"
+                data-src="assets/artist/artist-3@2x-50.jpg" />
+              <p class="sp-caption font-brand">
+                Marina Abramović<br />
+                <span class="emphasis">Rhythm</span>, 1974<br />
+                2 Photographic prints and text<br />
+                166 x 250 x 165.5 cm<br />
+                65 3/8 x 98 3/8 x 65 1/4 in<br />
+              </p>
+            </div>
+          </div>
         </div>
 
         <div class="contained mb-2">
@@ -155,8 +228,36 @@
               reperum andam, consequossit dolupta que et mole</p>
         </div>
 
+        <div class="contained mb-2">
+          <div style="padding:56.34% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/404997561?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+          <p class="font-brand">
+            Ryan Gander<br>
+            <em>Video title</em>, 2020<br>
+            Zoom on Vimeo
+          </p>
+        </div>       
+
         <div class="contained">
           <img class="max-width" src="assets/studio/gander/gander-5.jpg">
+
+          <p class="font-brand">
+            Ryan Gander<br>
+            <em>Title</em>, 2020<br>
+            Description
+          </p>
+        </div>
+
+        <div class="contained">
+          <a href="#" class="studio-pdf-link d-block link-discreet">
+            <img class="max-width" src="assets/studio/gander/pdf-book-link.jpg">
+          </a>
+
+          <p class="font-brand">
+            Ryan Gander<br>
+            <em>Title</em>, 2020<br>
+            PDF download, 20 MB
+          </p>
         </div>
 
         <div class="contained mt-2">
@@ -200,23 +301,20 @@
 
       <script type="text/javascript">
       	jQuery( document ).ready(function( $ ) {
-      		$( '#slider-home' ).sliderPro({
-            width: 1248, // 780 before #NAVUPDATE
-            height: 591, // 370 before #NAVUPDATE
+      		$( '#slider-artist' ).sliderPro({
+            width: 880,
+            height: 664,
+            autoplay: true,
+            autoplayDelay: 2400,
             slideDistance: 0,
             arrows: true,
             buttons: false,
-            smallSize: 351,
-            autoplayDelay: 3000,
-            breakpoints: {
-              375: {
-                width: 351,
-                height: 217,
-                arrows: false,
-                buttons: false,
-                autoplay: true
-              }
-            }
+            updateHash: true,
+            centerImage: true,
+            allowScaleUp: false,
+            centerSelectedSlide: false,
+            imageScaleMode: 'contain',
+            fadeCaption: false
           });
       	});
       </script>
