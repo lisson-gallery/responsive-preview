@@ -1,0 +1,98 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the studio page and subpages.
+// -----------------------------------------------------------------------------
+
+
+// Studio - "Lisson" heading
+
+.studio-lisson-heading {
+    font-size: 2.5rem; 
+    letter-spacing: 8px; 
+    margin-bottom: -1.5rem;
+
+  @media screen and (max-width: $breakpoint-medium) {
+    font-size: 2rem;
+    letter-spacing: 6px;
+  }
+  @media screen and (max-width: $breakpoint-tiny) {
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+  }
+}
+// Studio - "Studio" heading
+
+.studio-studio-heading {
+    font-size: 7.5rem; 
+    letter-spacing: 12px;
+  
+  @media screen and (max-width: $breakpoint-medium) {
+    font-size: 5rem;
+    letter-spacing: 8px;
+  }
+  @media screen and (max-width: $breakpoint-tiny) {
+    font-size: 4rem;
+    letter-spacing: 4px;
+  }
+}
+
+// Studio - Landing page - Thumbnail links
+
+a.studio-landing-image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    min-height: 400px;
+    transition: background-image 0.8s ease;
+  
+    @media screen and (max-width: $breakpoint-medium) {
+        background: none !important;
+        min-height: auto !important;
+  }
+}
+
+// Studio - Article page - Artist name heading
+
+.studio-artist-heading {
+    font-size: 2.5rem; 
+  
+  @media screen and (max-width: $breakpoint-medium) {
+    font-size: 2rem;
+  }
+  @media screen and (max-width: $breakpoint-tiny) {
+    font-size: 1.5rem;
+  }
+}
+
+// Studio - Article page - PDF links
+
+.studio-pdf-link {
+    position: relative;
+  
+  &>img { vertical-align: middle; }
+
+  &::before {
+    transition: opacity 0.8s ease;
+    opacity: 0; }
+
+  &:hover::before {
+    display: flex;
+    opacity: 1;
+    content: "Download PDF";
+    font-family: $brand-font-stack;
+    font-size: 3em;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    justify-content: center;
+    align-items: center; 
+
+    @media screen and (max-width: $breakpoint-medium) {
+        font-size: 2em;
+    }
+    @media screen and (max-width: $breakpoint-tiny) {
+        font-size: 1.5em;
+    }
+  }
+} 

@@ -54,6 +54,20 @@
     display: none; }
 }
 
+.hide-small {
+  @media screen and (max-width: $breakpoint-small) {
+    display: none;
+  }
+}
+
+.show-small {
+  display: none;
+
+  @media screen and (max-width: $breakpoint-small) {
+    display: block;
+  }
+}
+
 /**
  * Display modes
  */

@@ -20,50 +20,8 @@
         </style>
 
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="plugins/slider-pro/dist/css/slider-pro.min.css"/>
 
         <style>
-          .studio-lisson-heading {
-            font-size:40px; 
-            letter-spacing:8px; 
-            margin-bottom: -1.5rem;
-          }
-          @media screen and (max-width: 640px) {
-            .studio-lisson-heading {
-              font-size: 32px;
-              letter-spacing: 6px;
-            }
-          }
-          @media screen and (max-width: 375px) {
-            .studio-lisson-heading {
-              font-size: 24px;
-              letter-spacing: 4px;
-            }
-          }
-
-          .studio-studio-heading {
-            font-size:120px; 
-            letter-spacing:12px;
-          }
-          @media screen and (max-width: 640px) {
-            .studio-studio-heading {
-              font-size: 80px;
-              letter-spacing: 8px;
-            }
-          }
-
-          @media screen and (max-width: 375px) {
-            .studio-studio-heading {
-              font-size: 64px;
-              letter-spacing: 4px;
-            }
-          }
-          a.gander,
-          a.herrera,
-          a.whitney,
-          a.hayden {
-            transition: background-image 0.8s ease;
-          }
           a.gander:hover {
             background-image: url(assets/studio/gander/gander-hover.jpg) !important;
           }
@@ -76,31 +34,9 @@
           a.hayden:hover {
             background-image: url(assets/studio/hayden/hayden-hover.jpg) !important;
           }
-
-          .show-small {
-            display: none;
-          }
-          @media screen and (max-width: 640px) {
-            .hide-small {
-              display: none;
-            }
-            .show-small {
-              display: block;
-            }
-            .studio-landing-image {
-              background: none !important;
-              min-height: auto !important;
-            }
-          }
-          
-          @media screen and (max-width: 640px) {
-            .news-grid-2up {
-              margin-bottom: 24px;
-            }
-          }
         </style>
     </head>
-    <body class="page-home">
+    <body class="page-studio-landing">
 
       <header>
         <a id="brand-link" class="hide-text d-none" href="index.html">
@@ -160,11 +96,7 @@
 
           <div class="news-grid-2up-item">
             <a href="studio-gander.html" class="d-block gander studio-landing-image" 
-              style="background-image:url(assets/studio/gander/gander-link.jpg); 
-              background-repeat: no-repeat;
-              background-position: center;
-              background-size:cover; 
-              min-height:400px;"
+              style="background-image:url(assets/studio/gander/gander-link.jpg);"
             >
               <img class="max-width show-small" src="assets/studio/gander/gander-link.jpg" >
             </a>
@@ -196,11 +128,7 @@
 
           <div class="news-grid-2up-item">
             <a href="#" class="d-block herrera studio-landing-image" 
-              style="background-image:url(assets/studio/herrera/herrera-link.jpg); 
-              background-repeat: no-repeat;
-              background-position: center;
-              background-size:cover; 
-              min-height:400px;"
+              style="background-image:url(assets/studio/herrera/herrera-link.jpg);"
             >
               <img class="max-width show-small" src="assets/studio/herrera/herrera-link.jpg" >
             </a>
@@ -232,11 +160,7 @@
 
           <div class="news-grid-2up-item">
             <a href="#" class="d-block whitney studio-landing-image" 
-              style="background-image:url(assets/studio/whitney/whitney-link.jpg); 
-              background-repeat: no-repeat;
-              background-position: center;
-              background-size:cover; 
-              min-height:400px;"
+              style="background-image:url(assets/studio/whitney/whitney-link.jpg);"
             >
              <img class="max-width show-small" src="assets/studio/whitney/whitney-link.jpg" >
             </a>
@@ -268,11 +192,7 @@
 
           <div class="news-grid-2up-item">
             <a href="#" class="d-block hayden studio-landing-image" 
-              style="background-image:url(assets/studio/hayden/hayden-link.jpg); 
-              background-repeat: no-repeat;
-              background-position: center;
-              background-size:cover; 
-              min-height:400px;"
+              style="background-image:url(assets/studio/hayden/hayden-link.jpg);"
             > 
             <img class="max-width show-small" src="assets/studio/hayden/hayden-link.jpg" >
             </a>
@@ -311,31 +231,5 @@
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
       <script src="js/plugins.js"></script>
       <script src="js/main.js"></script>-->
-
-      <script src="libs/jquery-1.11.0.min.js"></script>
-      <script src="plugins/slider-pro/dist/js/jquery.sliderPro.min.js"></script>
-
-      <script type="text/javascript">
-      	jQuery( document ).ready(function( $ ) {
-      		$( '#slider-home' ).sliderPro({
-            width: 1248, // 780 before #NAVUPDATE
-            height: 591, // 370 before #NAVUPDATE
-            slideDistance: 0,
-            arrows: true,
-            buttons: false,
-            smallSize: 351,
-            autoplayDelay: 3000,
-            breakpoints: {
-              375: {
-                width: 351,
-                height: 217,
-                arrows: false,
-                buttons: false,
-                autoplay: true
-              }
-            }
-          });
-      	});
-      </script>
     </body>
 </html>

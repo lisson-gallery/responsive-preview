@@ -242,7 +242,12 @@
   display: grid;
   grid-gap: $space-medium $space-medium;
   grid-template-columns: repeat(2, 1fr);
-  margin-bottom: $space-large; }
+  margin-bottom: $space-large; 
+
+  @media screen and (max-width: $breakpoint-small) {
+    margin-bottom: 1.5rem; 
+  }
+}
 
 .news-grid-2up-feature {
   grid-column: span 2;
