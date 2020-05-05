@@ -810,6 +810,16 @@ p,
   word-break: break-word;
 }
 
+/**
+ * Images
+ */
+.img-contained {
+  max-height: 600px;
+  display: block;
+  margin: auto;
+  width: auto;
+}
+
 #brand-link {
   padding: 24px 0;
   display: block;

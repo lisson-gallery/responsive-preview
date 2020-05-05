@@ -225,3 +225,14 @@
   word-break: break-all;
   word-break: break-word;
 }
+
+/**
+ * Images
+ */
+
+ .img-contained {
+  max-height: 600px;
+  display: block;
+  margin: auto;
+  width: auto;
+ }
