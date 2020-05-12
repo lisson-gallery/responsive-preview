@@ -2156,18 +2156,15 @@ body > footer {
 
 .studio-studio-heading {
   font-size: 7.5rem;
-  letter-spacing: 12px;
 }
 @media screen and (max-width: 768px) {
   .studio-studio-heading {
     font-size: 5rem;
-    letter-spacing: 8px;
   }
 }
 @media screen and (max-width: 375px) {
   .studio-studio-heading {
     font-size: 4rem;
-    letter-spacing: 4px;
   }
 }
 
