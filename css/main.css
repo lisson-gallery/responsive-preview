@@ -572,6 +572,34 @@ p,
   text-transform: uppercase;
 }
 
+.pull-quote-text {
+  font-size: 2.75rem;
+  line-height: 1.5;
+}
+@media screen and (max-width: 1024px) {
+  .pull-quote-text {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pull-quote-text {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .pull-quote-text {
+    font-size: 1.5rem;
+  }
+}
+
+.pull-quote-text::before {
+  content: "“";
+}
+
+.pull-quote-text::after {
+  content: "”";
+}
+
 /**
  * Clear inner floats
  */
@@ -678,6 +706,10 @@ p,
 
 .align-self-end {
   align-self: end;
+}
+
+.align-items-center {
+  align-items: center;
 }
 
 /**
