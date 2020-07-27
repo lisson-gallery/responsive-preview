@@ -591,6 +591,11 @@ p,
     font-size: 1.5rem;
   }
 }
+@media screen and (max-width: 375px) {
+  .pull-quote-text {
+    font-size: 1rem;
+  }
+}
 
 .pull-quote-text::before {
   content: "“";
