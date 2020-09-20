@@ -1374,6 +1374,50 @@ body > footer {
   }
 }
 
+.masonry-grid-horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+.masonry-grid-horizontal a {
+  height: 40vh;
+  flex-grow: 1;
+  margin: 1rem;
+}
+.masonry-grid-horizontal a:last-child {
+  flex-grow: 10;
+}
+.masonry-grid-horizontal img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: contain;
+  vertical-align: bottom;
+}
+@media (max-aspect-ratio: 1/1) {
+  .masonry-grid-horizontal a {
+    height: 30vh;
+  }
+}
+@media (max-height: 480px) {
+  .masonry-grid-horizontal a {
+    height: 80vh;
+  }
+}
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+  .masonry-grid-horizontal {
+    flex-direction: row;
+  }
+  .masonry-grid-horizontal a {
+    height: auto;
+    width: 100%;
+  }
+  .masonry-grid-horizontal img {
+    width: 100%;
+    max-height: 75vh;
+    min-width: 0;
+  }
+}
+
 /*
  * Smaller components
  */

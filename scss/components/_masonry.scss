@@ -43,3 +43,49 @@
   }
 
 }
+
+.masonry-grid-horizontal {
+  // References: 
+  // https://css-tricks.com/adaptive-photo-layout-with-flexbox/
+  // https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit 
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+  a {
+    height: 40vh;
+    flex-grow: 1;
+    margin: 1rem;
+  }
+  a:last-child {
+    flex-grow: 10;
+  }
+  img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: contain;
+    vertical-align: bottom;
+  } 
+
+  @media (max-aspect-ratio: 1/1) {
+    a { height: 30vh; }
+  }
+
+  @media (max-height: 480px) {
+    a { height: 80vh; }
+  }
+
+  @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+      flex-direction: row;
+  
+    a {
+      height: auto;
+      width: 100%;
+    }
+  
+    img {
+      width: 100%;
+      max-height: 75vh;
+      min-width: 0;
+    }
+  }
+}
