@@ -47,8 +47,25 @@
 
         <div class="news-grid-3up border-bottom space-bottom-l">
 
+          <style>
+            .online-exhib-label {
+              position: relative;
+              display: block;
+            }
+            .online-exhib-label::before {
+              content: 'Online';
+              position: absolute;
+              color: white;
+              background: black;
+              font-family: "GillSansWGL", "Gill Sans WGL Regular", "Gill Sans MT", "Gill Sans", GillSans, Calibri, sans-serif;
+              padding: .25rem;
+              right: 1rem;
+              top: 1rem;
+            }
+          </style>
+
           <div class="news-grid-3up-item">
-            <a href="exhibition.html">
+            <a href="exhibition.html" class="online-exhib-label">
               <img src="assets/exhibitions/exhibitions-1@2x-50.jpg" />
               <p>EVERYTHING AT ONCE<br />
               5 October – 10 December 2017</p>
