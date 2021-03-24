@@ -10,6 +10,19 @@
   margin-top: 0;
   margin-bottom: $space-small; }
 
+.online-exhib-label {
+  position: relative;
+  display: block; }
+.online-exhib-label::before {
+  content: 'Online';
+  position: absolute;
+  color: white;
+  background: black;
+  font-family: $brand-font-stack;
+  padding: .25rem;
+  right: 1rem;
+  top: 1rem; }
+
 /*
  * Borders
  */

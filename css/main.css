@@ -1426,6 +1426,22 @@ body > footer {
   margin-bottom: 12px;
 }
 
+.online-exhib-label {
+  position: relative;
+  display: block;
+}
+
+.online-exhib-label::before {
+  content: "Online";
+  position: absolute;
+  color: white;
+  background: black;
+  font-family: "GillSansWGL", "Gill Sans WGL Regular", "Gill Sans MT", "Gill Sans", GillSans, Calibri, sans-serif;
+  padding: 0.25rem;
+  right: 1rem;
+  top: 1rem;
+}
+
 /*
  * Borders
  */
