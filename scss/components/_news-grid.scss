@@ -102,7 +102,7 @@
   @media screen and (max-width: $breakpoint-medium) {
     grid-template-columns: repeat(2, 1fr); }
 
-  @media screen and (max-width: $breakpoint-tiny) {
+  @media screen and (max-width: $breakpoint-small) {
     grid-template-columns: 1fr; }
 }
 
