@@ -56,14 +56,22 @@ column-count: 2;
 column-gap: $space-medium;
 
 .masonry-item-2col {
-  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+          page-break-inside: avoid;
+               break-inside: avoid;
   margin-bottom: $space-medium;
   text-align: center;
+  overflow: hidden;
 
   img {
     width: 100%;
     max-width: 100%;
     height: 100%;
+  }
+
+  @supports (break-inside: avoid-column) {
+    // Reference: https://stackoverflow.com/questions/50679675/break-inside-avoid-column-doesnt-work-in-firefox/63471850#63471850
+      overflow: visible; /* for chrome */
   }
 
 }
