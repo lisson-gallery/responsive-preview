@@ -3,65 +3,17 @@
 // -----------------------------------------------------------------------------
 
 .masonry-grid {
-    -moz-column-count: 3;
-    -webkit-column-count: 3;
-  column-count: 3;
-    -moz-column-gap: $space-medium;
-    -webkit-column-gap: $space-medium;
-  column-gap: $space-medium;
-
-  .masonry-item {
-    break-inside: avoid;
-    margin-bottom: $space-medium;
-    text-align: center;
-
-    img {
-      width: 100%;
-      max-width: 100%;
-      height: 100%;
-    }
-
-  }
-
-  @media screen and (max-width: $breakpoint-medium) {
-      -moz-column-count: 2;
-      -webkit-column-count: 2;
-    column-count: 2;
-      -moz-column-gap: $space-medium;
-      -webkit-column-gap: $space-medium;
-    column-gap: $space-medium;
-  }
-
-  @media screen and (max-width: $breakpoint-tiny) {
-      -moz-column-count: 1;
-      -webkit-column-count: 1;
-    column-count: 1;
-      -moz-column-gap: 0;
-      -webkit-column-gap: 0;
-    column-gap: 0;
-    margin-bottom: $space-x-large;
-  }
-
-}
-
-
-// 2 column variation
-
-.masonry-grid-2col {
-  -moz-column-count: 2;
-  -webkit-column-count: 2;
-column-count: 2;
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+column-count: 3;
   -moz-column-gap: $space-medium;
   -webkit-column-gap: $space-medium;
 column-gap: $space-medium;
 
-.masonry-item-2col {
-  -webkit-column-break-inside: avoid;
-          page-break-inside: avoid;
-               break-inside: avoid;
+.masonry-item {
+  break-inside: avoid;
   margin-bottom: $space-medium;
   text-align: center;
-  overflow: hidden;
 
   img {
     width: 100%;
@@ -69,74 +21,142 @@ column-gap: $space-medium;
     height: 100%;
   }
 
-  @supports (break-inside: avoid-column) {
-    // Reference: https://stackoverflow.com/questions/50679675/break-inside-avoid-column-doesnt-work-in-firefox/63471850#63471850
-      overflow: visible; /* for chrome */
-  }
-
 }
 
 @media screen and (max-width: $breakpoint-medium) {
-  -moz-column-count: 1;
-  -webkit-column-count: 1;
-column-count: 1;
-  -moz-column-gap: $space-medium;
-  -webkit-column-gap: $space-medium;
-column-gap: $space-medium;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+  column-count: 2;
+    -moz-column-gap: $space-medium;
+    -webkit-column-gap: $space-medium;
+  column-gap: $space-medium;
 }
 
 @media screen and (max-width: $breakpoint-tiny) {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+  column-count: 1;
+    -moz-column-gap: 0;
+    -webkit-column-gap: 0;
+  column-gap: 0;
+  margin-bottom: $space-x-large;
+}
+
+}
+
+
+// 2 column variation
+
+.masonry-grid-2col {
+-moz-column-count: 2;
+-webkit-column-count: 2;
+column-count: 2;
+-moz-column-gap: $space-medium;
+-webkit-column-gap: $space-medium;
+column-gap: $space-medium;
+
+  .masonry-item-2col {
+  -webkit-column-break-inside: avoid;
+          page-break-inside: avoid;
+              break-inside: avoid;
+  margin-bottom: $space-medium;
+  text-align: center;
+  overflow: hidden;
+
+    img {
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+    }
+
+    @supports (break-inside: avoid-column) {
+      // Reference: https://stackoverflow.com/questions/50679675/break-inside-avoid-column-doesnt-work-in-firefox/63471850#63471850
+        overflow: visible; /* for chrome */
+    }
+
+  }
+
+  @media screen and (max-width: $breakpoint-medium) {
   -moz-column-count: 1;
   -webkit-column-count: 1;
-column-count: 1;
+  column-count: 1;
+  -moz-column-gap: $space-medium;
+  -webkit-column-gap: $space-medium;
+  column-gap: $space-medium;
+  }
+
+  @media screen and (max-width: $breakpoint-tiny) {
+  -moz-column-count: 1;
+  -webkit-column-count: 1;
+  column-count: 1;
   -moz-column-gap: 0;
   -webkit-column-gap: 0;
-column-gap: 0;
-margin-bottom: $space-x-large;
-}
+  column-gap: 0;
+  margin-bottom: $space-x-large;
+  }
 
 }
 
 .masonry-grid-horizontal {
-  // References: 
-  // https://css-tricks.com/adaptive-photo-layout-with-flexbox/
-  // https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit 
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -1rem;
+// References: 
+// https://css-tricks.com/adaptive-photo-layout-with-flexbox/
+// https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit 
+display: flex;
+flex-wrap: wrap;
+margin: 0 -1rem;
+a {
+  height: 40vh;
+  flex-grow: 1;
+  margin: 1rem;
+}
+a:last-child { flex-grow: 10; }
+img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: contain;
+  vertical-align: bottom;
+} 
+
+@media (max-aspect-ratio: 1/1) {
+  a { height: 30vh; }
+}
+
+@media (max-height: 480px) {
+  a { height: 80vh; }
+}
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+    flex-direction: row;
+
   a {
-    height: 40vh;
-    flex-grow: 1;
-    margin: 1rem;
+    height: auto;
+    width: 100%;
   }
-  a:last-child { flex-grow: 10; }
+
   img {
-    max-height: 100%;
-    min-width: 100%;
-    object-fit: contain;
-    vertical-align: bottom;
-  } 
+    width: 100%;
+    max-height: 75vh;
+    min-width: 0;
+  }
+}
+}
 
-  @media (max-aspect-ratio: 1/1) {
-    a { height: 30vh; }
+// Masonry styles
+// https://masonry.desandro.com/options.html
+
+.grid {
+  max-width: 1280px;
+}
+.grid-sizer,
+.grid-item {
+  width: calc(50% - 12px);
+  margin-bottom: $space-medium;
+
+  img { 
+    max-width: 100%;
   }
 
-  @media (max-height: 480px) {
-    a { height: 80vh; }
-  }
-
-  @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
-      flex-direction: row;
-  
-    a {
-      height: auto;
-      width: 100%;
-    }
-  
-    img {
-      width: 100%;
-      max-height: 75vh;
-      min-width: 0;
-    }
+  @media screen and (max-width: $breakpoint-medium) {
+    width: 100%;
   }
 }

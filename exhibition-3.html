@@ -14,10 +14,11 @@
 <link href='https://hello.myfonts.net' rel='preconnect'>
 <link rel="alternate" type="application/rss+xml" title="RSS" href="https://lisson-gallery-staging.herokuapp.com/news.rss.rss" />
 <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="plugins/slider-pro/dist/css/slider-pro.min.css"/>
+<link rel="stylesheet" href="plugins/slider-pro/dist/css/slider-pro.min.css"/>
 <meta name="csrf-param" content="authenticity_token" />
 <meta name="csrf-token" content="LNs2Ev5XMgDBR4QTACtOhJ0icjtP2V7+47Db7O0EgrM8hZXTi4JSa9sGlOQzo81mw4tXSLGiLRKV9pt+K604Ow==" />
 <script src="/assets/application-383f46be3d86df92722d82d7f466e9bbe347bcc5a4832b75e63935883d64ad26.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <style>
   .exhibition-description {
     max-width: 940px;
@@ -70,13 +71,14 @@
 
     <h2 class="mt-2">Works on show</h2>
 
-    <div class="masonry-grid-2col mb-4">
+    <div class="grid mb-4">
 
-      <div class="masonry-item-2col">
+      <div class="grid-sizer"></div>
+      <div class="grid-item">
         <a class="link-discreet" href="#">
           <img alt="Marina Abramovic: Seven Deaths" src="https://lisson-art-staging.s3.amazonaws.com/uploads/attachment/image/body/20009/archivethumb_1_ABRA200001.jpeg" />
           <div class="mt-2 mb-0 text-left">
-            <h3 class="heading-2"><em>Seven Deaths: The Breath</em></h3>
+            <h3 class="heading-2"><em>1 Seven Deaths: The Breath</em></h3>
             <p class="font-brand">2020/2021<br />
               Alabaster, custom light<br />
               104 x 88 x 12 cm<br />
@@ -91,11 +93,11 @@
         </a>  
       </div>
 
-      <div class="masonry-item-2col">
+      <div class="grid-item">
         <a class="link-discreet" href="#">
           <img alt="Marina Abramovic: Seven Deaths" src="https://lisson-art.s3.amazonaws.com/uploads/attachment/image/body/14694/archivethumb_ABRA160002-1_1.jpeg" />
           <div class="mt-2 mb-0 text-left">
-            <h3 class="heading-2"><em>Seven Deaths: The Breath</em></h3>
+            <h3 class="heading-2"><em>2 Seven Deaths: The Breath</em></h3>
             <p class="font-brand">2020/2021<br />
               Alabaster, custom light<br />
               104 x 88 x 12 cm<br />
@@ -109,11 +111,11 @@
         </a>  
       </div>
 
-      <div class="masonry-item-2col">
+      <div class="grid-item">
         <a class="link-discreet" href="#">
           <img alt="Marina Abramovic: Seven Deaths" src="https://lisson-art.s3.amazonaws.com/uploads/attachment/image/body/885/archivethumb_ABRA890001.jpg" />
           <div class="mt-2 mb-0 text-left">
-            <h3 class="heading-2"><em>Seven Deaths: The Breath</em></h3>
+            <h3 class="heading-2"><em>3 Seven Deaths: The Breath</em></h3>
             <p class="font-brand">2020/2021<br />
               Alabaster, custom light<br />
               104 x 88 x 12 cm<br />
@@ -128,11 +130,11 @@
         </a>  
       </div>
 
-      <div class="masonry-item-2col">
+      <div class="grid-item">
         <a class="link-discreet" href="#">
           <img alt="Marina Abramovic: Seven Deaths" src="https://lisson-art.s3.amazonaws.com/uploads/attachment/image/body/882/archivethumb_ABRA970001.jpg" />
           <div class="mt-2 mb-0 text-left">
-            <h3 class="heading-2"><em>Seven Deaths: The Breath</em></h3>
+            <h3 class="heading-2"><em>4 Seven Deaths: The Breath</em></h3>
             <p class="font-brand">2020/2021<br />
               Alabaster, custom light<br />
               104 x 88 x 12 cm<br />
@@ -300,6 +302,15 @@
   </p>
 </footer>
 
+<script>
+  var container = document.querySelector('.grid');
+  var msnry = new Masonry( container, {
+    columnWidth: '.grid-sizer',
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    gutter: 24
+  });
+</script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
