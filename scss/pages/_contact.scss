@@ -20,12 +20,12 @@
   overflow: hidden; /* For IE */
   clear: both; /* For IE */
   display: grid;
-  grid-gap: $space-large $space-medium;
+  grid-gap: $space-medium;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   margin-bottom: $space-large;
 
-  @media screen and (max-width: $breakpoint-medium) {
+  @media screen and (max-width: 959px) {
     grid-template-columns: repeat(2, 1fr); }
 
   @media screen and (max-width: $breakpoint-small) {
@@ -40,12 +40,9 @@
 
   img {
     width: 100%;
-    max-width: 100%;
-    margin-bottom: $space-small; }
+    max-width: 100%; }
   p {
-    margin: 0; }
-  p+p {
-    margin-top: $space-small; }
+    margin-bottom: 0; }
 
   @supports (display:grid) { /* To cancel IE rules */
     width: auto;

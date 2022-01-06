@@ -2325,12 +2325,12 @@ body > footer {
   clear: both;
   /* For IE */
   display: grid;
-  grid-gap: 48px 24px;
+  grid-gap: 24px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   margin-bottom: 48px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 959px) {
   .contact-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -2354,13 +2354,9 @@ body > footer {
 .contact-grid-item img {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 12px;
 }
 .contact-grid-item p {
-  margin: 0;
-}
-.contact-grid-item p + p {
-  margin-top: 12px;
+  margin-bottom: 0;
 }
 @supports (display: grid) {
   .contact-grid-item {
