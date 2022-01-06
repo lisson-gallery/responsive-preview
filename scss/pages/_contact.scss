@@ -15,3 +15,41 @@
       text-decoration: none; }
   }
 }
+
+.contact-grid {
+  overflow: hidden; /* For IE */
+  clear: both; /* For IE */
+  display: grid;
+  grid-gap: $space-large $space-medium;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-bottom: $space-large;
+
+  @media screen and (max-width: $breakpoint-medium) {
+    grid-template-columns: repeat(2, 1fr); }
+
+  @media screen and (max-width: $breakpoint-small) {
+    grid-template-columns: 1fr; }
+}
+
+.contact-grid-item {
+  width: 24%; /* For IE */
+  float: left; /* For IE */
+  margin-right: 1%; /* For IE */
+  margin-bottom: 20px; /* For IE */
+
+  img {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: $space-small; }
+  p {
+    margin: 0; }
+  p+p {
+    margin-top: $space-small; }
+
+  @supports (display:grid) { /* To cancel IE rules */
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
