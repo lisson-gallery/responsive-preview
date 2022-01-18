@@ -20,7 +20,7 @@
   overflow: hidden; /* For IE */
   clear: both; /* For IE */
   display: grid;
-  grid-gap: $space-medium;
+  grid-gap: $space-large $space-medium;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   margin-bottom: $space-large;

@@ -2325,7 +2325,7 @@ body > footer {
   clear: both;
   /* For IE */
   display: grid;
-  grid-gap: 24px;
+  grid-gap: 48px 24px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   margin-bottom: 48px;
