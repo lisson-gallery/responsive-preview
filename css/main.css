@@ -1147,6 +1147,11 @@ body > footer {
   grid-template-columns: minmax(100px, 30%) minmax(100px, 70%);
   grid-template-rows: auto;
 }
+@media screen and (max-width: 640px) {
+  #footer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 .footer-locations {
   grid-column: 1/2;
@@ -1158,7 +1163,9 @@ body > footer {
 }
 @media screen and (max-width: 640px) {
   .footer-locations {
-    grid-column: 1/3;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 0;
   }
 }
 
@@ -1177,11 +1184,41 @@ body > footer {
   display: inline-block;
 }
 @media screen and (max-width: 640px) {
+  .footer-social a:link,
+.footer-social a:visited {
+    background-size: 24px;
+    width: 48px;
+    height: 48px;
+  }
+}
+@media screen and (max-width: 640px) and (max-width: 640px) {
+  .footer-social a:link,
+.footer-social a:visited {
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+}
+.footer-social a.subscribe-link {
+  width: auto;
+  height: auto;
+  vertical-align: 11px;
+  margin-right: 4px;
+}
+@media screen and (max-width: 640px) {
+  .footer-social a.subscribe-link {
+    font-size: 1.2rem;
+    display: block;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (max-width: 640px) {
   .footer-social {
     grid-column: 1/3;
     grid-row: 2;
-    margin-bottom: 24px;
-    justify-self: start;
+    margin-bottom: 24px !important;
+    justify-self: center;
   }
 }
 
@@ -1197,6 +1234,12 @@ body > footer {
   background-image: url("../assets/icon-soundcloud.svg");
   width: 28px !important;
   background-size: 20px !important;
+}
+@media screen and (max-width: 640px) {
+  .icon-soundcloud {
+    background-size: 32px !important;
+    width: 52px !important;
+  }
 }
 
 .icon-twitter {
@@ -1229,6 +1272,8 @@ body > footer {
 }
 @media screen and (max-width: 640px) {
   .footer-legal {
+    font-size: 0.875rem;
+    text-align: center;
     grid-row: 3;
   }
 }
