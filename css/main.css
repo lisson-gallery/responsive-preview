@@ -1187,15 +1187,15 @@ body > footer {
   .footer-social a:link,
 .footer-social a:visited {
     background-size: 24px;
-    width: 48px;
-    height: 48px;
+    width: 44px;
+    height: 44px;
   }
 }
 @media screen and (max-width: 640px) and (max-width: 640px) {
   .footer-social a:link,
 .footer-social a:visited {
-    margin-right: 8px;
-    margin-left: 8px;
+    margin-right: 4px;
+    margin-left: 4px;
   }
 }
 .footer-social a.subscribe-link {
@@ -1272,7 +1272,7 @@ body > footer {
 }
 @media screen and (max-width: 640px) {
   .footer-legal {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     text-align: center;
     grid-row: 3;
   }

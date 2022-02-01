@@ -47,12 +47,12 @@
 
     @media screen and (max-width: $breakpoint-small) {
       background-size: 24px;
-      width: 48px;
-      height: 48px;
+      width: 44px;
+      height: 44px;
 
       @media screen and (max-width: $breakpoint-small) {
-        margin-right: 8px;
-        margin-left: 8px;
+        margin-right: $space-x-small;
+        margin-left: $space-x-small;
       }
     }
   }
@@ -124,7 +124,7 @@
   }
 
   @media screen and (max-width: $breakpoint-small) {
-    font-size: .875rem;
+    font-size: .75rem;
     text-align: center;
     grid-row: 3;
   }
