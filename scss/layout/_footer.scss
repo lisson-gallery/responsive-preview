@@ -49,11 +49,10 @@
       background-size: 24px;
       width: 42px;
       height: 42px;
+      margin-right: $space-x-small;
+      margin-left: $space-x-small;
 
-      @media screen and (max-width: $breakpoint-small) {
-        margin-right: $space-x-small;
-        margin-left: $space-x-small;
-      }
+      background: red;
     }
   }
 

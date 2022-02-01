@@ -1189,13 +1189,9 @@ body > footer {
     background-size: 24px;
     width: 42px;
     height: 42px;
-  }
-}
-@media screen and (max-width: 640px) and (max-width: 640px) {
-  .footer-social a:link,
-.footer-social a:visited {
     margin-right: 4px;
     margin-left: 4px;
+    background: red;
   }
 }
 .footer-social a.subscribe-link {
