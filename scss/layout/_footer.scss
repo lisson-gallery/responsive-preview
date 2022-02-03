@@ -29,6 +29,10 @@
     text-align: center;
     margin-bottom: 0;
   }
+
+  @media screen and (max-width: $breakpoint-tiny) {
+    font-size: 1rem;
+  }
 }
 
 .footer-social {
@@ -40,17 +44,17 @@
   a:visited {
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 16px;
+    background-size: 14px;
     width: 24px;
     height: 32px;
     display: inline-block;
 
     @media screen and (max-width: $breakpoint-small) {
       background-size: 24px;
-      width: 42px;
-      height: 42px;
-      margin-right: $space-x-small;
-      margin-left: $space-x-small;
+      width: 38px;
+      height: 38px;
+      margin-right: 2px;
+      margin-left: 2px;
     }
   }
 
@@ -61,7 +65,7 @@
     margin-right: $space-x-small;
 
     @media screen and (max-width: $breakpoint-small) {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       display: block;
       text-align: center;
       margin-right: 0;
@@ -85,12 +89,12 @@
 }
 .icon-soundcloud {
   background-image: url('../assets/icon-soundcloud.svg');
-  width: 28px !important;
-  background-size: 20px !important;
+  width: 26px !important;
+  background-size: 18px !important;
 
   @media screen and (max-width: $breakpoint-small) {
-    background-size: 32px !important;
-    width: 52px !important;
+    background-size: 28px !important;
+    width: 48px !important;
   }
 }
 .icon-twitter {
@@ -121,7 +125,7 @@
   }
 
   @media screen and (max-width: $breakpoint-small) {
-    font-size: .75rem;
+    font-size: .65rem;
     text-align: center;
     grid-row: 3;
   }

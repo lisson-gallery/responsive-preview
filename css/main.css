@@ -1168,6 +1168,11 @@ body > footer {
     margin-bottom: 0;
   }
 }
+@media screen and (max-width: 375px) {
+  .footer-locations {
+    font-size: 1rem;
+  }
+}
 
 .footer-social {
   grid-column: 2/3;
@@ -1178,7 +1183,7 @@ body > footer {
 .footer-social a:visited {
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 16px;
+  background-size: 14px;
   width: 24px;
   height: 32px;
   display: inline-block;
@@ -1187,10 +1192,10 @@ body > footer {
   .footer-social a:link,
 .footer-social a:visited {
     background-size: 24px;
-    width: 42px;
-    height: 42px;
-    margin-right: 4px;
-    margin-left: 4px;
+    width: 38px;
+    height: 38px;
+    margin-right: 2px;
+    margin-left: 2px;
   }
 }
 .footer-social a.subscribe-link {
@@ -1201,7 +1206,7 @@ body > footer {
 }
 @media screen and (max-width: 640px) {
   .footer-social a.subscribe-link {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     display: block;
     text-align: center;
     margin-right: 0;
@@ -1227,13 +1232,13 @@ body > footer {
 
 .icon-soundcloud {
   background-image: url("../assets/icon-soundcloud.svg");
-  width: 28px !important;
-  background-size: 20px !important;
+  width: 26px !important;
+  background-size: 18px !important;
 }
 @media screen and (max-width: 640px) {
   .icon-soundcloud {
-    background-size: 32px !important;
-    width: 52px !important;
+    background-size: 28px !important;
+    width: 48px !important;
   }
 }
 
@@ -1267,7 +1272,7 @@ body > footer {
 }
 @media screen and (max-width: 640px) {
   .footer-legal {
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     text-align: center;
     grid-row: 3;
   }
