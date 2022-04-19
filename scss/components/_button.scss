@@ -39,6 +39,8 @@
   padding: .5rem .7rem;
   display: inline-block;
 
+  &:link,
+  &:visited,
   &:hover,
   &:active,
   &:focus {
