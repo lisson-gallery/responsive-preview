@@ -17,38 +17,72 @@
             font-family: GillSansWGL;
             src: url(assets/32EB93_0_unhinted_0.woff2) format("woff2");
           }
+
+          body.alt {
+            display: block;
+          }
+
+          .sticky-nav {
+            display: flex;
+            background-color: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            justify-content: space-between;
+          }
+
+          .sticky-nav aside {
+            display: flex;
+            align-items: center;
+          }
+
+          .container-alt {
+            display: grid;
+            margin: auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-areas:
+                "main main main main"
+                "main main main main"
+                "footer footer footer footer";
+            grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);
+          }
         </style>
 
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="plugins/slider-pro/dist/css/slider-pro.min.css"/>
     </head>
-    <body class="page-home">
+    <body class="page-home alt">
 
-      <header>
-        <a id="brand-link" class="hide-text" href="index.html">
-          <img src="assets/lisson-gallery-logo.svg" alt="Lisson Gallery" />
-        </a>
-      </header>
+      <div class="sticky-nav">
 
-      <aside>
-        <nav>
-          <input class="menu-btn" type="checkbox" id="menu-btn" />
-          <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-          <ul id="nav" class="menu font-brand no-bullets no-margin">
-            <!--<li><a class="nav-current" href="index.html">Home</a></li> #NAVUPDATE-->
-            <li><a href="artists.html">Artists</a></li>
-            <li><a href="exhibitions.html">Exhibitions</a></li>
-            <li><a href="studio.html">Studio</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
+        <header>
+          <a id="brand-link" class="hide-text" href="index.html">
+            <img src="assets/lisson-gallery-logo.svg" alt="Lisson Gallery" />
+          </a>
+        </header>
+  
+        <aside>
+          <nav>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul id="nav" class="menu font-brand no-bullets no-margin">
+              <!--<li><a class="nav-current" href="index.html">Home</a></li> #NAVUPDATE-->
+              <li><a href="artists.html">Artists</a></li>
+              <li><a href="exhibitions.html">Exhibitions</a></li>
+              <li><a href="studio.html">Studio</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+  
+        </aside>
 
-      </aside>
-
-      <main>
+      </div>
+      
+      <main class="alt">
 
         <div class="news-grid-3up">
 
