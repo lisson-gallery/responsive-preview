@@ -230,6 +230,15 @@
     text-decoration: underline; }
 }
 
+.link-visible-hover {
+  text-decoration: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: underline !important; }
+}
+
 /**
  * Text
  */

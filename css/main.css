@@ -9,14 +9,10 @@
 /* Document
    ========================================================================== */
 html {
-  font-family: sans-serif;
-  /* 1 */
-  line-height: 1.15;
-  /* 2 */
-  -ms-text-size-adjust: 100%;
-  /* 3 */
-  -webkit-text-size-adjust: 100%;
-  /* 3 */
+  font-family: sans-serif; /* 1 */
+  line-height: 1.15; /* 2 */
+  -ms-text-size-adjust: 100%; /* 3 */
+  -webkit-text-size-adjust: 100%; /* 3 */
 }
 
 /* Sections
@@ -57,8 +53,7 @@ h1 {
  */
 figcaption,
 figure,
-main {
-  /* 1 */
+main { /* 1 */
   display: block;
 }
 
@@ -74,12 +69,9 @@ figure {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -87,10 +79,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -100,10 +90,8 @@ pre {
  * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
  */
 a {
-  background-color: transparent;
-  /* 1 */
-  -webkit-text-decoration-skip: objects;
-  /* 2 */
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
 }
 
 /**
@@ -120,12 +108,9 @@ a:hover {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -151,10 +136,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -242,14 +225,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: sans-serif;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -257,8 +236,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -267,8 +245,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -281,8 +258,7 @@ button,
 html [type=button],
 [type=reset],
 [type=submit] {
-  -webkit-appearance: button;
-  /* 2 */
+  -webkit-appearance: button; /* 2 */
 }
 
 /**
@@ -322,18 +298,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -341,10 +311,8 @@ legend {
  * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
 progress {
-  display: inline-block;
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
 }
 
 /**
@@ -360,10 +328,8 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -379,10 +345,8 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -398,10 +362,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -470,11 +432,11 @@ html {
  * Basic styles for links
  */
 a {
-  color: black;
+  color: rgb(0, 0, 0);
   text-decoration: underline;
 }
 a:hover, a:active, a:focus {
-  color: black;
+  color: rgb(0, 0, 0);
   text-decoration: underline;
 }
 
@@ -482,7 +444,7 @@ a:hover, a:active, a:focus {
  * Basic typography style for copy text
  */
 body {
-  color: black;
+  color: rgb(0, 0, 0);
   font-family: "TimesNewRoman", "Times New Roman", "Times", "Baskerville", "Georgia", serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -510,7 +472,7 @@ h2,
 }
 @media screen and (max-width: 375px) {
   h2,
-.heading-2 {
+  .heading-2 {
     font-size: 1.375rem;
   }
 }
@@ -627,8 +589,7 @@ p,
  */
 .hide-text {
   overflow: hidden;
-  padding: 0;
-  /* 1 */
+  padding: 0; /* 1 */
   text-indent: 101%;
   white-space: nowrap;
 }
@@ -741,8 +702,7 @@ p,
 
 .video-wrapper {
   position: relative;
-  padding-bottom: 56.25%;
-  /* 16:9 */
+  padding-bottom: 56.25%; /* 16:9 */
   padding-top: 0;
   height: 0;
 }
@@ -859,6 +819,13 @@ p,
   text-decoration: underline;
 }
 
+.link-visible-hover {
+  text-decoration: none;
+}
+.link-visible-hover:hover, .link-visible-hover:active, .link-visible-hover:focus {
+  text-decoration: underline !important;
+}
+
 /**
  * Text
  */
@@ -898,11 +865,9 @@ p,
 }
 
 #nav {
-  font-size: 18px;
-  /* #NAVUPDATE was 20px */
+  font-size: 18px; /* #NAVUPDATE was 20px */
 }
-#nav > li {
-  /* #NAVUPDATE */
+#nav > li { /* #NAVUPDATE */
   margin-left: 1rem;
   display: inline-block;
 }
@@ -918,8 +883,7 @@ p,
   text-decoration: underline;
 }
 @media screen and (max-width: 1024px) {
-  #nav > li {
-    /* #NAVUPDATE */
+  #nav > li { /* #NAVUPDATE */
     margin-left: 0;
     display: block;
   }
@@ -941,7 +905,6 @@ p,
     padding-right: 0;
     transition: height 0.2s ease-out;
   }
-
   .menu-icon {
     cursor: pointer;
     display: inline-block;
@@ -950,7 +913,6 @@ p,
     position: relative;
     user-select: none;
   }
-
   .menu-icon .navicon {
     background: #333;
     display: block;
@@ -959,9 +921,8 @@ p,
     transition: background 0.2s ease-out;
     width: 18px;
   }
-
   .menu-icon .navicon:before,
-.menu-icon .navicon:after {
+  .menu-icon .navicon:after {
     background: #333;
     content: "";
     display: block;
@@ -970,70 +931,56 @@ p,
     transition: all 0.2s ease-out;
     width: 100%;
   }
-
   .menu-icon .navicon:before {
     top: 5px;
   }
-
   .menu-icon .navicon:after {
     top: -5px;
   }
-
   .menu-btn {
     display: none;
   }
-
   .menu-btn:checked ~ .menu {
     height: 25rem;
   }
-
   .menu-btn:checked ~ .menu-icon .navicon {
     background: transparent;
   }
-
   .menu-btn:checked ~ .menu-icon .navicon:before {
     transform: rotate(-45deg);
   }
-
   .menu-btn:checked ~ .menu-icon .navicon:after {
     transform: rotate(45deg);
   }
-
   .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
   }
 }
-@media screen and (min-width: 0\0 ) {
-  /* Overrides for IE 9-11: no responsive nav */
+@media screen and (min-width: 0\0 ) { /* Overrides for IE 9-11: no responsive nav */
   .menu {
     text-align: left;
     height: auto;
     padding-top: 0;
     padding-right: 0;
   }
-
   .menu-btn {
     display: none;
   }
-
   .menu-icon {
     display: none;
   }
 }
-@supports (-ms-ime-align: auto) {
-  /* Overrides for Edge 13-14: no responsive nav */
+@supports (-ms-ime-align: auto) { /* Overrides for Edge 13-14: no responsive nav */
   .menu {
     text-align: left;
     height: auto;
     padding-top: 0;
     padding-right: 0;
   }
-
   .menu-btn {
     display: none;
   }
-
   .menu-icon {
     display: none;
   }
@@ -1074,15 +1021,11 @@ body > header {
   }
 }
 body > aside {
-  width: 25%;
-  /* For IE */
-  float: left;
-  /* For IE */
+  width: 25%; /* For IE */
+  float: left; /* For IE */
   grid-area: aside;
-  justify-self: end;
-  /* #NAVUPDATE */
-  align-self: center;
-  /* #NAVUPDATE */
+  justify-self: end; /* #NAVUPDATE */
+  align-self: center; /* #NAVUPDATE */
 }
 @media screen and (max-width: 1024px) {
   body > aside {
@@ -1095,15 +1038,12 @@ body > aside {
   }
 }
 body > main {
-  width: 75%;
-  /* For IE */
-  float: left;
-  /* For IE */
+  width: 75%; /* For IE */
+  float: left; /* For IE */
   grid-area: main;
   background: white;
   /*padding-top: $space-large;*/
-  padding-top: 24px;
-  /* #NAVUPDATE */
+  padding-top: 24px; /* #NAVUPDATE */
 }
 @media screen and (max-width: 640px) {
   body > main {
@@ -1112,10 +1052,8 @@ body > main {
   }
 }
 body > footer {
-  overflow: hidden;
-  /* For IE */
-  clear: both;
-  /* For IE */
+  overflow: hidden; /* For IE */
+  clear: both; /* For IE */
   grid-area: footer;
 }
 @media screen and (max-width: 640px) {
@@ -1125,9 +1063,7 @@ body > footer {
   }
 }
 @supports (display: grid) {
-  body {
-    /* To cancel IE rules */
-  }
+  body { /* To cancel IE rules */ }
   body > aside, body > main {
     width: auto;
   }
@@ -1139,7 +1075,7 @@ body > footer {
 }
 
 #footer {
-  border-top: 1px solid black;
+  border-top: 1px solid rgb(0, 0, 0);
   padding-top: 24px;
   padding-bottom: 24px;
   margin-top: 48px;
@@ -1190,7 +1126,7 @@ body > footer {
 }
 @media screen and (max-width: 640px) {
   .footer-social a:link,
-.footer-social a:visited {
+  .footer-social a:visited {
     background-size: 24px;
     width: 38px;
     height: 38px;
@@ -1466,8 +1402,7 @@ body > footer {
 }
 @supports (break-inside: avoid-column) {
   .masonry-grid-2col .masonry-item-2col {
-    overflow: visible;
-    /* for chrome */
+    overflow: visible; /* for chrome */
   }
 }
 @media screen and (max-width: 768px) {
@@ -1551,7 +1486,7 @@ body > footer {
 }
 @media screen and (max-width: 768px) {
   .grid-sizer,
-.grid-item {
+  .grid-item {
     width: 100%;
   }
 }
@@ -1610,10 +1545,8 @@ body > footer {
  * 5 columns
  */
 .news-grid-5up {
-  overflow: hidden;
-  /* For IE */
-  clear: both;
-  /* For IE */
+  overflow: hidden; /* For IE */
+  clear: both; /* For IE */
   display: grid;
   grid-gap: 24px 24px;
   grid-template-columns: repeat(5, 1fr);
@@ -1631,14 +1564,10 @@ body > footer {
 }
 
 .news-grid-5up-item {
-  width: 19%;
-  /* For IE */
-  float: left;
-  /* For IE */
-  margin-right: 1%;
-  /* For IE */
-  margin-bottom: 20px;
-  /* For IE */
+  width: 19%; /* For IE */
+  float: left; /* For IE */
+  margin-right: 1%; /* For IE */
+  margin-bottom: 20px; /* For IE */
 }
 .news-grid-5up-item img {
   width: 100%;
@@ -1652,8 +1581,7 @@ body > footer {
   margin-top: 12px;
 }
 @supports (display: grid) {
-  .news-grid-5up-item {
-    /* To cancel IE rules */
+  .news-grid-5up-item { /* To cancel IE rules */
     width: auto;
     margin-right: 0;
     margin-bottom: 0;
@@ -1664,10 +1592,8 @@ body > footer {
  * 4 columns
  */
 .news-grid-4up {
-  overflow: hidden;
-  /* For IE */
-  clear: both;
-  /* For IE */
+  overflow: hidden; /* For IE */
+  clear: both; /* For IE */
   display: grid;
   grid-gap: 48px 24px;
   grid-template-columns: repeat(4, 1fr);
@@ -1685,14 +1611,10 @@ body > footer {
 }
 
 .news-grid-4up-item {
-  width: 24%;
-  /* For IE */
-  float: left;
-  /* For IE */
-  margin-right: 1%;
-  /* For IE */
-  margin-bottom: 20px;
-  /* For IE */
+  width: 24%; /* For IE */
+  float: left; /* For IE */
+  margin-right: 1%; /* For IE */
+  margin-bottom: 20px; /* For IE */
 }
 .news-grid-4up-item img {
   width: 100%;
@@ -1706,8 +1628,7 @@ body > footer {
   margin-top: 12px;
 }
 @supports (display: grid) {
-  .news-grid-4up-item {
-    /* To cancel IE rules */
+  .news-grid-4up-item { /* To cancel IE rules */
     width: auto;
     margin-right: 0;
     margin-bottom: 0;
@@ -1718,10 +1639,8 @@ body > footer {
  * 3 columns
  */
 .news-grid-3up {
-  overflow: hidden;
-  /* For IE */
-  clear: both;
-  /* For IE */
+  overflow: hidden; /* For IE */
+  clear: both; /* For IE */
   display: grid;
   grid-gap: 48px 24px;
   grid-template-columns: repeat(3, 1fr);
@@ -1748,14 +1667,10 @@ body > footer {
 }
 
 .news-grid-3up-item {
-  width: 32%;
-  /* For IE */
-  float: left;
-  /* For IE */
-  margin-right: 1%;
-  /* For IE */
-  margin-bottom: 20px;
-  /* For IE */
+  width: 32%; /* For IE */
+  float: left; /* For IE */
+  margin-right: 1%; /* For IE */
+  margin-bottom: 20px; /* For IE */
 }
 .news-grid-3up-item img {
   width: 100%;
@@ -1779,8 +1694,7 @@ body > footer {
   }
 }
 @supports (display: grid) {
-  .news-grid-3up-item {
-    /* To cancel IE rules */
+  .news-grid-3up-item { /* To cancel IE rules */
     width: auto;
     margin-right: 0;
     margin-bottom: 0;
@@ -1788,40 +1702,32 @@ body > footer {
 }
 
 .news-grid-3up-focus {
-  margin-bottom: 20px;
-  /* For IE */
+  margin-bottom: 20px; /* For IE */
   grid-column: span 3;
   display: grid;
   grid-gap: 24px;
   grid-template-columns: repeat(3, 1fr);
 }
 .news-grid-3up-focus img {
-  width: 32%;
-  /* For IE */
-  float: right;
-  /* For IE */
-  margin-right: 1%;
-  /* For IE */
+  width: 32%; /* For IE */
+  float: right; /* For IE */
+  margin-right: 1%; /* For IE */
   grid-column: 2/4;
 }
 @supports (display: grid) {
-  .news-grid-3up-focus img {
-    /* To cancel IE rules */
+  .news-grid-3up-focus img { /* To cancel IE rules */
     width: 100%;
     max-width: 100%;
     margin-right: 0;
   }
 }
 .news-grid-3up-focus div {
-  width: 66%;
-  /* For IE */
-  float: left;
-  /* For IE */
+  width: 66%; /* For IE */
+  float: left; /* For IE */
   grid-column: 1/2;
 }
 @supports (display: grid) {
-  .news-grid-3up-focus div {
-    /* To cancel IE rules */
+  .news-grid-3up-focus div { /* To cancel IE rules */
     width: auto;
   }
 }
@@ -1848,8 +1754,7 @@ body > footer {
   }
 }
 @supports (display: grid) {
-  .news-grid-3up-focus {
-    /* To cancel IE rules */
+  .news-grid-3up-focus { /* To cancel IE rules */
     margin-bottom: 0;
   }
 }
@@ -1858,10 +1763,8 @@ body > footer {
  * 2 columns
  */
 .news-grid-2up {
-  overflow: hidden;
-  /* For IE */
-  clear: both;
-  /* For IE */
+  overflow: hidden; /* For IE */
+  clear: both; /* For IE */
   display: grid;
   grid-gap: 24px 24px;
   grid-template-columns: repeat(2, 1fr);
@@ -1880,14 +1783,10 @@ body > footer {
 }
 
 .news-grid-2up-item {
-  width: 49%;
-  /* For IE */
-  float: left;
-  /* For IE */
-  margin-right: 1%;
-  /* For IE */
-  margin-bottom: 20px;
-  /* For IE */
+  width: 49%; /* For IE */
+  float: left; /* For IE */
+  margin-right: 1%; /* For IE */
+  margin-bottom: 20px; /* For IE */
 }
 .news-grid-2up-item img {
   width: 100%;
@@ -1899,8 +1798,7 @@ body > footer {
   }
 }
 @supports (display: grid) {
-  .news-grid-2up-item {
-    /* To cancel IE rules */
+  .news-grid-2up-item { /* To cancel IE rules */
     width: auto;
     margin-right: 0;
     margin-bottom: 0;
@@ -1926,8 +1824,7 @@ body > footer {
   z-index: 1;
 }
 
-.slider-image {
-  /* was archive-image */
+.slider-image { /* was archive-image */
   max-height: 36.9375rem;
   width: auto;
 }
@@ -1995,7 +1892,7 @@ body > footer {
   padding-bottom: 24px;
   margin-top: 0;
   margin-bottom: 0;
-  border-top: 2px solid #444444;
+  border-top: 2px solid rgb(68, 68, 68);
   overflow: auto;
   max-width: 100%;
   flex-wrap: nowrap;
@@ -2015,7 +1912,7 @@ body > footer {
   display: block;
   width: 2px;
   height: 14px;
-  background: #444444;
+  background: rgb(68, 68, 68);
 }
 .timeline-hor li:last-of-type {
   margin-right: 80px;
@@ -2069,7 +1966,7 @@ body > footer {
     padding-top: 0;
     margin-top: 0;
     border-top: 0;
-    border-left: 2px solid #444444;
+    border-left: 2px solid rgb(68, 68, 68);
     margin-left: 4px;
     margin-bottom: 48px;
     grid-template-columns: 1fr;
@@ -2093,9 +1990,9 @@ body > footer {
     margin-bottom: 12px;
   }
   .timeline-hor .timeline-year,
-.timeline-hor .timeline-past::before,
-.timeline-hor .timeline-current::before,
-.timeline-hor .timeline-upcoming::before {
+  .timeline-hor .timeline-past::before,
+  .timeline-hor .timeline-current::before,
+  .timeline-hor .timeline-upcoming::before {
     position: relative;
     top: -8px;
     left: initial;
@@ -2156,7 +2053,6 @@ body > footer {
     grid-row: third-line/4;
     padding-right: 0;
   }
-
   .artist-image-area {
     grid-column: 1/span 2;
   }
@@ -2323,11 +2219,9 @@ body > footer {
   .news-header {
     flex-flow: column;
   }
-
   .news-header h2 {
     margin-bottom: 1rem;
   }
-
   .select-news {
     margin-bottom: 2rem;
   }
@@ -2346,7 +2240,7 @@ body > footer {
 
 @media screen and (max-width: 640px) {
   .basket,
-.shop-title {
+  .shop-title {
     grid-column: span 1 !important;
   }
 }
@@ -2372,10 +2266,8 @@ body > footer {
 }
 
 .contact-grid {
-  overflow: hidden;
-  /* For IE */
-  clear: both;
-  /* For IE */
+  overflow: hidden; /* For IE */
+  clear: both; /* For IE */
   display: grid;
   grid-gap: 48px 24px;
   grid-template-columns: repeat(4, 1fr);
@@ -2394,14 +2286,10 @@ body > footer {
 }
 
 .contact-grid-item {
-  width: 24%;
-  /* For IE */
-  float: left;
-  /* For IE */
-  margin-right: 1%;
-  /* For IE */
-  margin-bottom: 20px;
-  /* For IE */
+  width: 24%; /* For IE */
+  float: left; /* For IE */
+  margin-right: 1%; /* For IE */
+  margin-bottom: 20px; /* For IE */
 }
 .contact-grid-item img {
   width: 100%;
@@ -2411,8 +2299,7 @@ body > footer {
   margin-bottom: 0;
 }
 @supports (display: grid) {
-  .contact-grid-item {
-    /* To cancel IE rules */
+  .contact-grid-item { /* To cancel IE rules */
     width: auto;
     margin-right: 0;
     margin-bottom: 0;
